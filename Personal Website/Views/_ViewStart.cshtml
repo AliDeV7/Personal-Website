@@ -1,0 +1,22 @@
+﻿@{
+    var cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name
+    .Substring(startIndex: 0, length: 2)
+    .ToLower();
+
+    switch (cultureName)
+    {
+        case "fa":
+        case "ar":
+            {
+                Layout = "Layouts/RTL/_Layout";
+                break;
+            }
+
+        default:
+            {
+                Layout = "Layouts/LTR/_Layout";
+                break;
+            }
+    }
+
+}
