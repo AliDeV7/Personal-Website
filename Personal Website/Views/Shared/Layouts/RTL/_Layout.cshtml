@@ -1,5 +1,19 @@
 ﻿
 <!DOCTYPE html>
+@using Microsoft.AspNetCore.Builder
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Options
+
+@inject IOptions<RequestLocalizationOptions> LocOptions
+@{
+    var cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2).ToLower();
+    //var PageTitle = Resources.PageTitle.FirstName;
+    //ViewData["Title"] = PageTitle;
+
+    var cultureItems = LocOptions.Value.SupportedUICultures
+        .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+        .ToList();
+}
 <html lang="fa">
 <head>
     <meta charset="utf-8" />
