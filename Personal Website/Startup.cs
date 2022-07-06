@@ -78,5 +78,7 @@ namespace Personal_Website
             });
             app.UseCookiePolicy();
         }
+        // Add Vistor Counter in StartUp
+        // Check User Ip
     }
 }
