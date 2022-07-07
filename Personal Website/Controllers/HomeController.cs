@@ -11,6 +11,7 @@ using Personal_Website.Models;
 namespace Personal_Website.Controllers
 {
     [CheckIP]
+    [VisitCounter]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Personal_Website.Models;
 
 namespace Personal_Website.Migrations
 {
     [DbContext(typeof(PersonlWebsiteDbContext))]
-    partial class PersonlWebsiteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220707113546_VisitDateDetail")]
+    partial class VisitDateDetail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,10 +101,15 @@ namespace Personal_Website.Migrations
                     b.Property<long>("Period")
                         .HasColumnType("bigint");
 
+                    b.Property<int?>("VisitDetailId")
+                        .HasColumnType("int");
+
                     b.Property<int>("VisitorId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("VisitDetailId");
 
                     b.HasIndex("VisitorId");
 
@@ -141,7 +148,7 @@ namespace Personal_Website.Migrations
             modelBuilder.Entity("Personal_Website.Models.VisitDateDetail", b =>
                 {
                     b.HasOne("Personal_Website.Models.VisitDetail", "VisitDetail")
-                        .WithMany("VisitDateDetails")
+                        .WithMany()
                         .HasForeignKey("VisitDetailId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -149,6 +156,10 @@ namespace Personal_Website.Migrations
 
             modelBuilder.Entity("Personal_Website.Models.VisitDetail", b =>
                 {
+                    b.HasOne("Personal_Website.Models.VisitDetail", null)
+                        .WithMany("VisitDetails")
+                        .HasForeignKey("VisitDetailId");
+
                     b.HasOne("Personal_Website.Models.Visitor", "Visitor")
                         .WithMany("VisitDetails")
                         .HasForeignKey("VisitorId")
