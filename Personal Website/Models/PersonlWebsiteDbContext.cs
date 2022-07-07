@@ -16,5 +16,7 @@ namespace Personal_Website.Models
         public DbSet<Country> Countries { get; set; }
         public DbSet<Visitor> Visitors { get; set; }
         public DbSet<IPRange> IPRanges { get; set; }
+        public DbSet<VisitDetail> VisitDetails { get; set; }
+        public DbSet<VisitDateDetail> VisitDateDetails { get; set; }
     }
 }

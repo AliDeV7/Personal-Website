@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Personal_Website.Models;
 
 namespace Personal_Website.Migrations
 {
     [DbContext(typeof(PersonlWebsiteDbContext))]
-    partial class PersonlWebsiteDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220707104341_addVisitDetail")]
+    partial class addVisitDetail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,26 +68,6 @@ namespace Personal_Website.Migrations
                     b.ToTable("IPRanges");
                 });
 
-            modelBuilder.Entity("Personal_Website.Models.VisitDateDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long>("FullDate")
-                        .HasColumnType("bigint");
-
-                    b.Property<int>("VisitDetailId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("VisitDetailId");
-
-                    b.ToTable("VisitDateDetails");
-                });
-
             modelBuilder.Entity("Personal_Website.Models.VisitDetail", b =>
                 {
                     b.Property<int>("Id")
@@ -93,10 +75,16 @@ namespace Personal_Website.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("date");
 
-                    b.Property<long>("Period")
+                    b.Property<long>("DateDetail")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Minutes")
                         .HasColumnType("bigint");
 
                     b.Property<int>("VisitorId")
@@ -134,15 +122,6 @@ namespace Personal_Website.Migrations
                     b.HasOne("Personal_Website.Models.Country", "Country")
                         .WithMany("IpRanges")
                         .HasForeignKey("CountryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Personal_Website.Models.VisitDateDetail", b =>
-                {
-                    b.HasOne("Personal_Website.Models.VisitDetail", "VisitDetail")
-                        .WithMany("VisitDateDetails")
-                        .HasForeignKey("VisitDetailId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
