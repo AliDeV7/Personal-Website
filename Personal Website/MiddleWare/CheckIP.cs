@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
@@ -27,17 +28,53 @@ namespace Personal_Website.MiddleWare
             public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
             {
                 /// Get Device Ip in accessor
-                var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-                var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
-                var IpFromIran = await _db.iPRanges.AnyAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
+
                 CookieOptions CookieOptions = new CookieOptions() { Expires = DateTime.Now.AddDays(7) };
-                if (IpFromIran) // Is from IRAN
-                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "IR", CookieOptions);
-                
-                else
-                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "Other", CookieOptions);
-                
+                var CountryISO = await CreateVistorCookie(CookieOptions);
+                CreateCultureByCountry(CountryISO,CookieOptions);
+
                 await next();
+            }
+
+            private void CreateCultureByCountry(string CountryISO, CookieOptions CookieOptions)
+            {
+                switch (CountryISO.ToUpper())
+                {
+                    case "IR":
+                        _accessor.HttpContext.Response.Cookies.Append(
+                            CookieRequestCultureProvider.DefaultCookieName,
+                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture("fa")),
+                            CookieOptions);
+                        break;
+                    case "OTHER":
+                        _accessor.HttpContext.Response.Cookies.Append(
+                            CookieRequestCultureProvider.DefaultCookieName,
+                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture("en")),
+                            CookieOptions);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            private async Task<string> CreateVistorCookie(CookieOptions CookieOptions)
+            {
+                //var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                var VistorIP = "79.127.83.207";
+                var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
+                var IpFromIran = await _db.IPRanges.AnyAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
+                if (IpFromIran)
+                {
+                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "IR", CookieOptions);
+                    return "IR";
+                }
+
+                else
+                {
+                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "Other", CookieOptions);
+                    return "OTHER";
+                }
+
             }
         }
     }

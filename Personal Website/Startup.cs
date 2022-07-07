@@ -5,12 +5,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Personal_Website.Helper;
 using Personal_Website.Models;
 
 namespace Personal_Website
@@ -45,6 +47,7 @@ namespace Personal_Website
                         b => b.MigrationsAssembly(typeof(PersonlWebsiteDbContext).Assembly.FullName)));
 
             services.AddControllersWithViews();
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,7 +81,5 @@ namespace Personal_Website
             });
             app.UseCookiePolicy();
         }
-        // Add Vistor Counter in StartUp
-        // Check User Ip
     }
 }

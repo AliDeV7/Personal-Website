@@ -5,10 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Personal_Website.MiddleWare;
 using Personal_Website.Models;
 
 namespace Personal_Website.Controllers
 {
+    [CheckIP]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
