@@ -28,7 +28,6 @@ namespace Personal_Website.MiddleWare
             }
             public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
             {
-
                await IncreaseVisitCount();
                 await next();
             }
@@ -36,7 +35,6 @@ namespace Personal_Website.MiddleWare
             private async Task IncreaseVisitCount()
             {
                 var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-                //var VistorIP = "79.127.83.207";
 
                 var Visitor = await _db.Visitors.Include(x => x.VisitDetails).ThenInclude(x => x.VisitDateDetails).FirstOrDefaultAsync(x => x.IP == VistorIP);
                 if (Visitor == null)

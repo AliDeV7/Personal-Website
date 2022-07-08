@@ -33,6 +33,7 @@ namespace Personal_Website.MiddleWare
                 var CountryISO = await CreateVistorCookie(CookieOptions);
                 CreateCultureByCountry(CountryISO,CookieOptions);
 
+
                 await next();
             }
 
