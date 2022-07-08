@@ -1,4 +1,4 @@
-﻿
+﻿<!-- RTL -->
 <!DOCTYPE html>
 @using Microsoft.AspNetCore.Builder
 @using Microsoft.AspNetCore.Localization
@@ -52,7 +52,6 @@
     <link rel="stylesheet" type="text/css" href="~/assets/styles/vendors/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="~/assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="~/assets/styles/rtl.css" />
-    <link rel="stylesheet" type="text/css" href="../Views/PartialViews/Social.cshtml" />
 
     <!-- Font-awesome -->
     <link rel="stylesheet" type="text/css" href="~/lib/font-awesome/css/all.css" />
@@ -62,99 +61,34 @@
     <main class="main">
         <div class="container gutter-top gutter-bottom">
             <div class="row sticky-parent">
+
                 <!-- Sidebar -->
-                <aside class="col-12 col-md-12 col-xl-3">
-                    <div class="sidebar box-outer sticky-column">
-                        <!-- My photo -->
-                        <div class="sidebar__base-info">
-                            <figure class="avatar-box">
-                                <img src="~/assets/images/my-avatar.png" alt="علی احمدی | Ali Ahmaid">
-                            </figure>
-
-                            <div class="text-xl-center">
-                                <h3 class="title title--h3 sidebar__name">@Resources.Lable.Name</h3>
-                                <div class="badge">@Resources.Lable.Job</div>
-                            </div>
-
-                            <button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>@Resources.Lable.ShowContatct</span><i class="feathericon-chevron-down"></i></button>
-                        </div>
-
-                        <div class="sidebar__additional-info js-show">
-                            <div class="separation"></div>
-                            <ul class="details-info">
-                                <!-- Email -->
-                                <li class="details-info__item">
-                                    <span class="box icon-box"><i class="font-icon icon-envelope"></i></span>
-                                    <div class="contacts-block__info">
-                                        <span class="overhead">@Resources.Lable.Email</span>
-                                        <a class="text-overflow" href="ahmadi.ali2219@gmail.com" title="ahmadi.ali2219@gmail.com">ahmadi.ali2219@gmail.com</a>
-                                    </div>
-                                </li>
-                                <!-- Phone -->
-                                <li class="details-info__item">
-                                    <span class="box icon-box"><i class="font-icon icon-phone"></i></span>
-                                    <div class="contacts-block__info">
-                                        <span class="overhead">@Resources.Lable.PhoneNumber</span>
-                                        <span class="text-overflow" title="03831124">989370692219</span>
-                                    </div>
-                                </li>
-                                <!-- Birthday -->
-                                @*					            <li class="details-info__item">
-                                <span class="box icon-box"><i class="font-icon icon-calendar"></i></span>
-                                <div class="contacts-block__info">
-                                <span class="overhead">تاریخ تولد</span>
-                                <span class="text-overflow" title="9 خرداد 1400">9 خرداد 1400</span>
-                                </div>
-                                </li>*@
-                                <!-- Location -->
-                                <li class="details-info__item">
-                                    <span class="box icon-box"><i class="font-icon icon-location"></i></span>
-                                    <div class="contacts-block__info">
-                                        <span class="overhead">@Resources.Lable.Location</span>
-                                        <span class="text-overflow" title="@Resources.Lable.Address">@Resources.Lable.Address</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="separation d-xl-none"></div>
-
-                            <!-- Social -->
-                            <partial name="../PartialViews/Social" />
-                        </div>
-                    </div>
-                </aside>
+                <partial name="../Shared/PartialViews/Rtl/Sidebar" />
 
                 <!-- Content -->
                 <div class="col-12 col-md-12 col-xl-9">
                     <div class="box-outer">
                         <!-- Menu -->
-                        <div class="nav-container">
-                            <ul class="nav">
-                                <li class="nav__item"><a class="active" href="index.html">درباره من</a></li>
-                                <li class="nav__item"><a href="resume.html">رزومه من</a></li>
-                                <li class="nav__item"><a href="portfolio.html">نمونه کار ها</a></li>
-                                <li class="nav__item"><a href="blog.html">وبلاگ</a></li>
-                                <li class="nav__item"><a href="contact.html">تماس با من</a></li>
-                            </ul>
-                        </div>
+                        <partial name="../Shared/PartialViews/Rtl/Menu" />
 
-                        <!-- About -->
-                        <div class="pb-0 pb-sm-2">
-                            <h1 class="title title--h1 title__separate">درباره من</h1>
+                        <div class="maincontent">
+                            @RenderBody()
                         </div>
-
                     </div><!-- box-outer -->
                 </div><!-- Content -->
+
             </div><!-- sticky-parent -->
         </div><!-- container -->
     </main>
 
     <div class="back-to-top"></div>
 
-    @RenderBody()
+
     <!-- JavaScripts -->
     <script src="~/assets/js/jquery-3.4.1.min.js"></script>
     <script src="~/assets/js/plugins.min.js"></script>
     <script src="~/assets/js/common.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
 
 </body>
 </html>

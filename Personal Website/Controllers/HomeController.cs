@@ -26,6 +26,10 @@ namespace Personal_Website.Controllers
             return View();
         }
 
+        public IActionResult SelectResumePage()
+        {
+            return View("Resume");
+        }
         public IActionResult Privacy()
         {
             return View();

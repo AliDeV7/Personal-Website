@@ -30,31 +30,50 @@ namespace Personal_Website.MiddleWare
                 /// Get Device Ip in accessor
 
                 CookieOptions CookieOptions = new CookieOptions() { Expires = DateTime.Now.AddDays(7) };
-                var CountryISO = await CreateVistorCookie(CookieOptions);
-                CreateCultureByCountry(CountryISO,CookieOptions);
+                var CountryISO = await GetVisitorCountry();
+                CreateCultureByCountry(CountryISO, CookieOptions);
 
                 await next();
             }
 
             private void CreateCultureByCountry(string CountryISO, CookieOptions CookieOptions)
             {
+                string Culture = string.Empty;
                 switch (CountryISO.ToUpper())
                 {
                     case "IR":
-                        _accessor.HttpContext.Response.Cookies.Append(
-                            CookieRequestCultureProvider.DefaultCookieName,
-                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture("fa")),
-                            CookieOptions);
+                        Culture = "fa";
                         break;
+
+                    //Arabic Countries
+                    case "OM":
+                    case "QA":
+                    case "AE":
+                    case "SY":
+                    case "SA":
+                    case "LB":
+                    case "BH":
+                    case "IQ":
+                    case "JO":
+                    case "KW":
+                    case "EG":
+                        Culture = "en";
+                        break;
+
                     case "OTHER":
-                        _accessor.HttpContext.Response.Cookies.Append(
-                            CookieRequestCultureProvider.DefaultCookieName,
-                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture("en")),
-                            CookieOptions);
+                        Culture = "en";
                         break;
+
                     default:
+                        Culture = "en";
                         break;
                 }
+
+                _accessor.HttpContext.Response.Cookies.Append(
+                            CookieRequestCultureProvider.DefaultCookieName,
+                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(Culture)),
+                            CookieOptions);
+
             }
 
             private async Task<string> CreateVistorCookie(CookieOptions CookieOptions)
@@ -76,6 +95,25 @@ namespace Personal_Website.MiddleWare
                 }
 
             }
+
+            private async Task<string> GetVisitorCountry()
+            {
+                //var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                var VistorIP = "79.127.83.207";
+                var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
+                var IPCountry = await _db.IPRanges.Include(x => x.Country).FirstOrDefaultAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
+                if (IPCountry != null)
+                {
+                    return IPCountry.Country.ISO;
+                }
+
+                else
+                {
+                    return "OTHER";
+                }
+
+            }
+
         }
     }
 }
