@@ -41,7 +41,6 @@ namespace Personal_Website.MiddleWare
                 string Culture = string.Empty;
                 switch (CountryISO.ToUpper())
                 {
-
                     case "IR":
                         Culture = "fa";
                         break;
@@ -58,7 +57,7 @@ namespace Personal_Website.MiddleWare
                     case "JO":
                     case "KW":
                     case "EG":
-                        Culture = "ar";
+                        Culture = "en";
                         break;
 
                     case "OTHER":
@@ -69,6 +68,7 @@ namespace Personal_Website.MiddleWare
                         Culture = "en";
                         break;
                 }
+
                 _accessor.HttpContext.Response.Cookies.Append(
                             CookieRequestCultureProvider.DefaultCookieName,
                             CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(Culture)),

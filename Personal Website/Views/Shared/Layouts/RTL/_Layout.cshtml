@@ -71,20 +71,24 @@
                         <!-- Menu -->
                         <partial name="../Shared/PartialViews/Rtl/Menu" />
 
-                        @RenderBody()
-
+                        <div class="maincontent">
+                            @RenderBody()
+                        </div>
                     </div><!-- box-outer -->
                 </div><!-- Content -->
+
             </div><!-- sticky-parent -->
         </div><!-- container -->
     </main>
 
     <div class="back-to-top"></div>
 
+
     <!-- JavaScripts -->
     <script src="~/assets/js/jquery-3.4.1.min.js"></script>
     <script src="~/assets/js/plugins.min.js"></script>
     <script src="~/assets/js/common.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
 
 </body>
 </html>

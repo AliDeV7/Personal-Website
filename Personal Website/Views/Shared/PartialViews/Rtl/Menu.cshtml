@@ -1,9 +1,29 @@
 ﻿<div class="nav-container">
     <ul class="nav">
-        <li class="nav__item"><a class="active" href="index.html">@Resources.Lable.About</a></li>
-        <li class="nav__item"><a href="resume.html">@Resources.Lable.MyResume</a></li>
-        <li class="nav__item"><a href="portfolio.html">@Resources.Lable.Samples</a></li>
-        <li class="nav__item"><a href="blog.html">@Resources.Lable.Blog</a></li>
-        <li class="nav__item"><a href="contact.html">@Resources.Lable.ContactMe</a></li>
+        <li class="nav__item"><a class="active" >@Resources.Lable.About</a></li>
+        <li class="nav__item"><a href="/home/SelectResumePage">@Resources.Lable.MyResume</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('sample')">@Resources.Lable.Samples</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('blog')">@Resources.Lable.Blog</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('contact')">@Resources.Lable.ContactMe</a></li>
     </ul>
 </div>
+
+@*<div class="nav-container">
+    <ul class="nav">
+        <li class="nav__item"><a class="active" onclick="pageNavigate('about')">@Resources.Lable.About</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('resume')">@Resources.Lable.MyResume</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('sample')">@Resources.Lable.Samples</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('blog')">@Resources.Lable.Blog</a></li>
+        <li class="nav__item"><a onclick="pageNavigate('contact')">@Resources.Lable.ContactMe</a></li>
+    </ul>
+</div>
+
+<script>
+    function pageNavigate(selectedmenu) {
+        $(this).addClass('active');
+        $.post('/Home/SelectMenu', { pageName: selectedmenu }, function(value) {
+            $('.maincontent').html('');
+            $('.maincontent').append(value)
+        })
+    }
+</script>*@
