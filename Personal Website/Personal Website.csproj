@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Shared\PartialViews\Ltr\" />
-    <Folder Include="Views\Shared\PartialViews\Rtl\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -61,11 +61,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About Me.
+        /// </summary>
+        public static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shiraz, Iran.
         /// </summary>
         public static string Address {
             get {
                 return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blog.
+        /// </summary>
+        public static string Blog {
+            get {
+                return ResourceManager.GetString("Blog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Me.
+        /// </summary>
+        public static string ContactMe {
+            get {
+                return ResourceManager.GetString("ContactMe", resourceCulture);
             }
         }
         
@@ -97,6 +124,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to My Resume.
+        /// </summary>
+        public static string MyResume {
+            get {
+                return ResourceManager.GetString("MyResume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ali Ahmadi.
         /// </summary>
         public static string Name {
@@ -111,6 +147,15 @@ namespace Resources {
         public static string PhoneNumber {
             get {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Samples.
+        /// </summary>
+        public static string Samples {
+            get {
+                return ResourceManager.GetString("Samples", resourceCulture);
             }
         }
         

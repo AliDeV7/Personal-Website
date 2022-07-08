@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About" xml:space="preserve">
+    <value>درباره من</value>
+  </data>
   <data name="Address" xml:space="preserve">
     <value>ایران ، شیراز</value>
+  </data>
+  <data name="Blog" xml:space="preserve">
+    <value>وبلاگ</value>
+  </data>
+  <data name="ContactMe" xml:space="preserve">
+    <value>تماس با من</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>ایمیل</value>
@@ -129,11 +138,17 @@
   <data name="Location" xml:space="preserve">
     <value>موقعیت مکانی</value>
   </data>
+  <data name="MyResume" xml:space="preserve">
+    <value>رزومه</value>
+  </data>
   <data name="Name" xml:space="preserve">
     <value>علی احمدی</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>شماره تلفن</value>
+  </data>
+  <data name="Samples" xml:space="preserve">
+    <value>نمونه کارها</value>
   </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>نمایش اطلاعات تماس</value>
