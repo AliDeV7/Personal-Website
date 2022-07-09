@@ -56,22 +56,22 @@ namespace Personal_Website.Controllers
             }
         }
 
-        public IActionResult Blog()
-        {
-            switch (cultureName)
-            {
-                case "fa":
-                case "ar":
-                    {
-                        return View("Rtl/Blog");
-                    }
+        //public IActionResult Blog()
+        //{
+        //    switch (cultureName)
+        //    {
+        //        case "fa":
+        //        case "ar":
+        //            {
+        //                return View("Rtl/Blog");
+        //            }
 
-                default:
-                    {
-                        return View("Ltr/Blog");
-                    }
-            }
-        }
+        //        default:
+        //            {
+        //                return View("Ltr/Blog");
+        //            }
+        //    }
+        //}
 
         public IActionResult Contact()
         {
