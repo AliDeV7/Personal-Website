@@ -15,24 +15,115 @@ namespace Personal_Website.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private string cultureName;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(startIndex: 0, length: 2).ToLower();
         }
 
-        public IActionResult Index()
+        public IActionResult Home()
         {
-            return View();
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Home");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Home");
+                    }
+            }
         }
 
-        public IActionResult SelectResumePage()
+        public IActionResult Resume()
         {
-            return View("Resume");
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Resume");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Resume");
+                    }
+            }
         }
-        public IActionResult Privacy()
+
+        //public IActionResult Blog()
+        //{
+        //    switch (cultureName)
+        //    {
+        //        case "fa":
+        //        case "ar":
+        //            {
+        //                return View("Rtl/Blog");
+        //            }
+
+        //        default:
+        //            {
+        //                return View("Ltr/Blog");
+        //            }
+        //    }
+        //}
+
+        public IActionResult Contact()
         {
-            return View();
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Contact");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Contact");
+                    }
+            }
+        }
+
+        public IActionResult Projects()
+        {
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Projects");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Projects");
+                    }
+            }
+        }
+
+        public IActionResult SelectedPage(string page)
+        {
+            switch (page)
+            {
+                case "home":
+                    return RedirectToAction("Home");
+                case "resume":
+                    return RedirectToAction("Resume");
+                case "contact":
+                    return RedirectToAction("Contact");
+                case "projects":
+                    return RedirectToAction("Projects");
+                case "blog":
+                    return RedirectToAction("Blog");
+                default:
+                    return  RedirectToAction("Home");
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

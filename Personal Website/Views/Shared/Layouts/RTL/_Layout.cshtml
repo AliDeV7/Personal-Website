@@ -14,7 +14,7 @@
         .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
         .ToList();
 }
-<html lang="fa">
+<html lang=cultureName>
 <head>
     <meta charset="utf-8" />
     <title>قالب شخصی وی کارت - درباره من</title>
@@ -61,34 +61,28 @@
     <main class="main">
         <div class="container gutter-top gutter-bottom">
             <div class="row sticky-parent">
-
                 <!-- Sidebar -->
                 <partial name="../Shared/PartialViews/Rtl/Sidebar" />
+
 
                 <!-- Content -->
                 <div class="col-12 col-md-12 col-xl-9">
                     <div class="box-outer">
                         <!-- Menu -->
                         <partial name="../Shared/PartialViews/Rtl/Menu" />
-
-                        <div class="maincontent">
-                            @RenderBody()
-                        </div>
+                        @RenderBody()
                     </div><!-- box-outer -->
                 </div><!-- Content -->
-
             </div><!-- sticky-parent -->
         </div><!-- container -->
     </main>
 
     <div class="back-to-top"></div>
 
-
     <!-- JavaScripts -->
     <script src="~/assets/js/jquery-3.4.1.min.js"></script>
     <script src="~/assets/js/plugins.min.js"></script>
     <script src="~/assets/js/common.js"></script>
-    <script src="~/lib/jquery/dist/jquery.js"></script>
 
 </body>
 </html>

@@ -61,7 +61,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About Me.
+        ///   Looks up a localized string similar to About.
         /// </summary>
         public static string About {
             get {
@@ -151,11 +151,11 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Samples.
+        ///   Looks up a localized string similar to Projects.
         /// </summary>
-        public static string Samples {
+        public static string Projects {
             get {
-                return ResourceManager.GetString("Samples", resourceCulture);
+                return ResourceManager.GetString("Projects", resourceCulture);
             }
         }
         
