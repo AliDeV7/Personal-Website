@@ -7,80 +7,80 @@
 /*fonts*/
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-ExtraBlack.woff2') format('woff2'),
-    url('../fonts/IRY-ExtraBlack.woff') format('woff'),
-    url('../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
+    src: url('../../fonts/IRY-ExtraBlack.woff2') format('woff2'),
+    url('../../fonts/IRY-ExtraBlack.woff') format('woff'),
+    url('../../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-ExtraBold.woff2') format('woff2'),
-    url('../fonts/IRY-ExtraBold.woff') format('woff'),
-    url('../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
+    src: url('../../fonts/IRY-ExtraBold.woff2') format('woff2'),
+    url('../../fonts/IRY-ExtraBold.woff') format('woff'),
+    url('../../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Black.woff2') format('woff2'),
-    url('../fonts/IRY-Black.woff') format('woff'),
-    url('../fonts/IRY-Black.svg#IRY-Black') format('svg');
+    src: url('../../fonts/IRY-Black.woff2') format('woff2'),
+    url('../../fonts/IRY-Black.woff') format('woff'),
+    url('../../fonts/IRY-Black.svg#IRY-Black') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Light.woff2') format('woff2'),
-    url('../fonts/IRY-Light.woff') format('woff'),
-    url('../fonts/IRY-Light.svg#IRY-Light') format('svg');
+    src: url('../../fonts/IRY-Light.woff2') format('woff2'),
+    url('../../fonts/IRY-Light.woff') format('woff'),
+    url('../../fonts/IRY-Light.svg#IRY-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Medium.woff2') format('woff2'),
-    url('../fonts/IRY-Medium.woff') format('woff'),
-    url('../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
+    src: url('../../fonts/IRY-Medium.woff2') format('woff2'),
+    url('../../fonts/IRY-Medium.woff') format('woff'),
+    url('../../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Thin.woff2') format('woff2'),
-    url('../fonts/IRY-Thin.woff') format('woff'),
-    url('../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
+    src: url('../../fonts/IRY-Thin.woff2') format('woff2'),
+    url('../../fonts/IRY-Thin.woff') format('woff'),
+    url('../../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Bold.woff2') format('woff2'),
-    url('../fonts/IRY-Bold.woff') format('woff'),
-    url('../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
+    src: url('../../fonts/IRY-Bold.woff2') format('woff2'),
+    url('../../fonts/IRY-Bold.woff') format('woff'),
+    url('../../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY.woff2') format('woff2'),
-    url('../fonts/IRY.woff') format('woff'),
-    url('../fonts/IRY.svg#IRY') format('svg');
+    src: url('../../fonts/IRY.woff2') format('woff2'),
+    url('../../fonts/IRY.woff') format('woff'),
+    url('../../fonts/IRY.svg#IRY') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sarb';
-    src: url('../fonts/Sarb-Regular.woff2') format('woff2'),
-    url('../fonts/Sarb-Regular.woff') format('woff');
+    src: url('../../fonts/Sarb-Regular.woff2') format('woff2'),
+    url('../../fonts/Sarb-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

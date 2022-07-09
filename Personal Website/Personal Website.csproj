@@ -31,9 +31,4 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\assets\styles\Ltr\" />
-    <Folder Include="wwwroot\assets\styles\Rtl\" />
-  </ItemGroup>
-
 </Project>
