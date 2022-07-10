@@ -368,8 +368,8 @@ html, body {
 
 @media only screen and (max-width: 580px) {
     .timeline {
-        padding-left: initial;
-        padding-right: 0.90625rem;
+        padding-right: initial;
+        padding-left: 0.90625rem;
     }
 }
 
@@ -403,8 +403,8 @@ html, body {
 
 @media only screen and (max-width: 580px) {
     .timeline__item {
-        padding-left: initial;
-        padding-right: 1.875rem;
+        padding-right: initial;
+        padding-left: 1.875rem;
     }
 }
 
