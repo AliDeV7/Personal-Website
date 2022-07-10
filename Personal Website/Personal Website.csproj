@@ -21,11 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Home\Ltr\" />
-    <Folder Include="Views\Shared\PartialViews\Ltr\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Resources\Resources.csproj" />
   </ItemGroup>
 

@@ -69,10 +69,7 @@ namespace Personal_Website.MiddleWare
                         break;
                 }
 
-                _accessor.HttpContext.Response.Cookies.Append(
-                            CookieRequestCultureProvider.DefaultCookieName,
-                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(Culture)),
-                            CookieOptions);
+                CreateCultureCookies.Create(Culture, _accessor.HttpContext.Response);
 
             }
 
@@ -98,8 +95,8 @@ namespace Personal_Website.MiddleWare
 
             private async Task<string> GetVisitorCountry()
             {
-                //var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-                var VistorIP = "79.127.83.207";
+                var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                //var VistorIP = "79.127.83.207";
                 var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
                 var IPCountry = await _db.IPRanges.Include(x => x.Country).FirstOrDefaultAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
                 if (IPCountry != null)
