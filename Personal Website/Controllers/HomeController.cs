@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Personal_Website.MiddleWare;
@@ -10,7 +12,6 @@ using Personal_Website.Models;
 
 namespace Personal_Website.Controllers
 {
-    [CheckIP]
     [VisitCounter]
     public class HomeController : Controller
     {
@@ -22,6 +23,12 @@ namespace Personal_Website.Controllers
             cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(startIndex: 0, length: 2).ToLower();
         }
 
+        [CheckIP]
+        public IActionResult Start()
+        {
+            return RedirectToAction("Home");
+        }
+        [Route("Home")]
         public IActionResult Home()
         {
             switch (cultureName)
@@ -39,6 +46,7 @@ namespace Personal_Website.Controllers
             }
         }
 
+        [Route("Resume")]
         public IActionResult Resume()
         {
             switch (cultureName)
@@ -73,6 +81,7 @@ namespace Personal_Website.Controllers
         //    }
         //}
 
+        [Route("Contact")]
         public IActionResult Contact()
         {
             switch (cultureName)
@@ -90,6 +99,7 @@ namespace Personal_Website.Controllers
             }
         }
 
+        [Route("Projects")]
         public IActionResult Projects()
         {
             switch (cultureName)
@@ -106,7 +116,6 @@ namespace Personal_Website.Controllers
                     }
             }
         }
-
         public IActionResult SelectedPage(string page)
         {
             switch (page)
@@ -122,8 +131,18 @@ namespace Personal_Website.Controllers
                 case "blog":
                     return RedirectToAction("Blog");
                 default:
-                    return  RedirectToAction("Home");
+                    return RedirectToAction("Home");
             }
+        }
+
+        public IActionResult ChangeLanguage(string lang, string returnURL)
+        {
+            Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(lang)),
+                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(7) });
+
+            return Redirect(returnURL);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

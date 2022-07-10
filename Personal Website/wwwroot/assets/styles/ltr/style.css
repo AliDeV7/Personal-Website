@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-icon {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   margin-top: -0.25rem;
   height: 2.5rem;
   width: 2.5rem;
@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 0.3125rem;
   position: absolute;
   bottom: -1.0625rem;
-  left: 0;
+  right: 0;
   width: 2.5rem;
   z-index: 1;
 }
@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 991px) {
   .block-quote {
-    padding-left: 3.8125rem;
+    padding-right: 3.8125rem;
   }
 }
 
@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
   .block-quote {
     font-size: 1.125rem;
     margin: 1rem 0;
-    padding-left: 0;
+    padding-right: 0;
     padding-top: 2.8125rem;
   }
   .block-quote p {
@@ -377,13 +377,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   position: absolute;
   top: 0.5rem;
-  left: -3.125rem;
+  right: -3.125rem;
   width: 1.6875rem;
 }
 
 @media only screen and (max-width: 991px) {
   .block-quote::before {
-    left: 0;
+    right: 0;
   }
 }
 
@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6 {
   .block-quote__author {
     font-size: 0.875rem;
     margin-top: 0;
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -519,12 +519,12 @@ a.link-gradient {
 }
 
 .input__icon {
-  padding-left: 3.375rem;
+  padding-right: 3.375rem;
 }
 
 @media only screen and (max-width: 580px) {
   .input__icon {
-    padding-left: 2.8125rem;
+    padding-right: 2.8125rem;
   }
 }
 
@@ -551,7 +551,7 @@ a.link-gradient {
   font-size: 0.75rem;
   line-height: 1.4;
   padding-top: 0.3125rem;
-  padding-left: 0.375rem;
+  padding-right: 0.375rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -647,7 +647,7 @@ select,
   height: 0;
   position: absolute;
   top: -0.375rem;
-  left: 1.0625rem;
+  right: 1.0625rem;
   width: 0;
 }
 
@@ -768,7 +768,7 @@ select,
 }
 
 .btn .font-icon {
-  margin-right: 0.375rem;
+  margin-left: 0.375rem;
 }
 
 .btn--small {
@@ -784,11 +784,11 @@ select,
 }
 
 .btn--icon-left i {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .btn--icon-right i {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -896,22 +896,22 @@ button:focus {
 }
 
 @media only screen and (max-width: 1200px) {
-  .sidebar .avatar-box {
-    -ms-flex-negative: 0;
+    .sidebar .avatar-box {
+        -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin: 0 1.5rem 0 0;
-    height: 7.5rem;
-    width: 7.5rem;
-  }
+        margin: 0 0 0 1.5rem;
+        height: 7.5rem;
+        width: 7.5rem;
+    }
 }
 
 @media only screen and (max-width: 580px) {
-  .sidebar .avatar-box {
-    border-radius: var(--radius-20);
-    margin: 0 1rem 0 0;
-    height: 5rem;
-    width: 5rem;
-  }
+    .sidebar .avatar-box {
+        border-radius: var(--radius-20);
+        margin: 0 0 0 1rem;
+        height: 5rem;
+        width: 5rem;
+    }
 }
 
 .sidebar .avatar-box img {
@@ -1115,7 +1115,7 @@ button:focus {
   -webkit-box-shadow: var(--box-shadow-30);
           box-shadow: var(--box-shadow-30);
   line-height: 1;
-  margin-right: 1rem;
+  margin-left: 1rem;
   height: 3rem;
   width: 3rem;
 }
@@ -1230,17 +1230,17 @@ button:focus {
 }
 
 .noGutters-Left {
-  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .noGutters-Right {
-  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* Details info */
 .details-info {
   list-style: none;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -1347,7 +1347,7 @@ button:focus {
 }
 
 .details-info--inline .details-info__item:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .details-info__info {
@@ -1461,18 +1461,18 @@ button:focus {
 }
 
 .nav__item {
-  margin-right: 2.75rem;
+  margin-left: 2.75rem;
 }
 
 @media only screen and (max-width: 991px) {
   .nav__item {
-    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 
 @media only screen and (max-width: 580px) {
   .nav__item {
-    margin-right: 1.25rem;
+    margin-left: 1.25rem;
   }
 }
 
@@ -1503,7 +1503,7 @@ button:focus {
 }
 
 .nav__item:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 /* -----------------------------------------------------------------
@@ -1542,7 +1542,7 @@ button:focus {
   color: var(--color-heading) !important;
   font-family: 'feather';
   height: 2rem;
-  right: 0.9375rem;
+  left: 0.9375rem;
   top: 0.9375rem;
   text-indent: -99999px;
   width: 2rem;
@@ -1573,7 +1573,7 @@ button:focus {
 }
 
 .mfp-close:focus {
-  right: 0.9375rem;
+  left: 0.9375rem;
   top: 0.9375rem;
 }
 
@@ -1733,14 +1733,14 @@ button:focus {
 }
 
 .case-item__icon {
-  margin-right: 1rem;
+  margin-left: 1rem;
   height: 2.5rem;
   width: 2.5rem;
 }
 
 @media only screen and (max-width: 580px) {
   .case-item__icon {
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 0.8125rem;
   }
 }
@@ -1804,7 +1804,7 @@ button:focus {
   height: 23.75rem;
   margin-bottom: 2rem;
   position: relative;
-  direction: ltr;
+  direction: rtl;
 }
 
 @media only screen and (max-width: 580px) {
@@ -2089,7 +2089,7 @@ button:focus {
     padding: 0.1875rem 1rem;
     position: relative;
     vertical-align: middle;
-    text-align: left;
+    text-align: right;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -2108,7 +2108,7 @@ button:focus {
   .select .placeholder:after {
     position: absolute;
     top: 50%;
-    right: 0.125rem;
+    left: 0.125rem;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     font-family: 'icomoon';
@@ -2134,13 +2134,13 @@ button:focus {
     padding: 0.5625rem 0;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 100%;
     z-index: 100;
   }
   .select ul li {
     display: block;
-    text-align: left;
+    text-align: right;
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
@@ -2259,7 +2259,7 @@ button:focus {
 
 .news-item__date span {
   display: inline-block;
-  padding-right: 1.125rem;
+  padding-left: 1.125rem;
   position: relative;
 }
 
@@ -2271,7 +2271,7 @@ button:focus {
   margin: auto;
   position: absolute;
   top: 0;
-  right: 0.4375rem;
+  left: 0.4375rem;
   bottom: 0;
   width: 0.25rem;
 }
@@ -2288,9 +2288,9 @@ button:focus {
 }
 
 @media only screen and (max-width: 580px) {
-  .news-item__caption {
-    padding: 1.1875rem 1rem 0;
-  }
+    .news-item__caption {
+        padding: 1.1875rem 0 0 1rem;
+    }
 }
 
 .news-item .title {
@@ -2681,17 +2681,17 @@ button:focus {
 .comment-box__footer li {
   cursor: pointer;
   font-weight: 400;
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 @media only screen and (max-width: 580px) {
   .comment-box__footer li {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 
 .comment-box__footer li:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .comment-box__footer .font-icon {
@@ -2758,13 +2758,13 @@ button:focus {
 }
 
 .comment-form .btn-submit {
-  right: 0;
-  margin-right: 0.75rem;
+  left: 0;
+  margin-left: 0.75rem;
 }
 
 @media only screen and (max-width: 580px) {
   .comment-form .btn-submit {
-    margin-right: 0.625rem;
+    margin-left: 0.625rem;
   }
 }
 
@@ -2777,7 +2777,7 @@ button:focus {
   line-height: 1.2;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2789,7 +2789,7 @@ button:focus {
   border-radius: var(--radius-16);
   -webkit-box-shadow: var(--box-shadow-50);
           box-shadow: var(--box-shadow-50);
-  margin-left: -1rem;
+  margin-right: -1rem;
   min-width: 14.9375rem;
   max-width: 14.9375rem;
 }
@@ -2802,13 +2802,13 @@ button:focus {
   border-top: 0.375rem solid var(--color-surface-2);
   position: absolute;
   bottom: -0.375rem;
-  left: 1rem;
+  right: 1rem;
   width: 0;
 }
 
 @media only screen and (max-width: 580px) {
   .comment-form .dropdown {
-    margin-left: 0.625rem;
+    margin-right: 0.625rem;
   }
 }
 
@@ -2863,7 +2863,7 @@ button:focus {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 0.375rem;
+  margin-left: 0.375rem;
 }
 
 .social-auth__item > * {
@@ -2927,7 +2927,7 @@ button:focus {
   margin-bottom: 1.5rem;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -3027,7 +3027,7 @@ button:focus {
 }
 
 .btn-back i {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 /* -----------------------------------------------------------------
@@ -3091,13 +3091,13 @@ button:focus {
 
 .review-item .title {
   margin-top: -1.375rem;
-  margin-left: calc(5rem + 0.9375rem);
+  margin-right: calc(5rem + 0.9375rem);
   margin-bottom: 0.75rem;
 }
 
 @media only screen and (max-width: 580px) {
   .review-item .title {
-    margin-left: 0;
+    margin-right: 0;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -3215,7 +3215,7 @@ button:focus {
 ----------------------------------------------------------------- */
 .timeline {
   margin-top: 1.8125rem;
-  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
 }
 
@@ -3232,7 +3232,7 @@ button:focus {
 
 @media only screen and (max-width: 580px) {
   .timeline {
-    padding-left: 0.90625rem;
+    padding-right: 0.90625rem;
   }
 }
 
@@ -3253,7 +3253,7 @@ button:focus {
   border-radius: 50%;
   position: absolute;
   top: 0.0625rem;
-  left: -0.3125rem;
+  right: -0.3125rem;
   height: 0.5625rem;
   width: 0.5625rem;
 }
@@ -3264,10 +3264,10 @@ button:focus {
 
 @media only screen and (max-width: 580px) {
   .timeline__item {
-    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
   .timeline__item::before {
-    left: -0.21875rem;
+    right: -0.21875rem;
     height: 0.375rem;
     width: 0.375rem;
   }

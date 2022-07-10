@@ -1,9 +1,14 @@
-﻿<div class="nav-container">
+﻿@{
+    var returnURL = string.IsNullOrEmpty(Context.Request.Path) ? "~/" : $"~{Context.Request.Path.Value}{Context.Request.QueryString}";
+}
+
+<div class="nav-container">
     <ul class="nav">
         <li class="nav__item"><a class="active" a href="/home/SelectedPage?page=home">@Resources.Lable.About</a></li>
         <li class="nav__item"><a href="/home/SelectedPage?page=resume">@Resources.Lable.MyResume</a></li>
         <li class="nav__item"><a href="/home/SelectedPage?page=projects">@Resources.Lable.Projects</a></li>
         <li class="nav__item"><a href="/home/SelectedPage?page=contact">@Resources.Lable.ContactMe</a></li>
+        <li class="nav__item" style="margin-right:3rem"><a asp-action="changeLanguage" asp-controller="Home" asp-route-lang="en" asp-route-returnUrl="@returnURL">English</a></li>
         @* <li class="nav__item"><a href="/home/SelectedPage?page=blog">@Resources.Lable.Blog</a></li>*@
     </ul>
 </div>

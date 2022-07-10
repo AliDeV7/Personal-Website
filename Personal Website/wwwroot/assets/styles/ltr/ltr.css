@@ -206,7 +206,7 @@ html, body {
 
 
 .mfp-content {
-    text-align: right;
+    text-align: left;
 }
 
 .mfp-close {
@@ -255,96 +255,96 @@ html, body {
 
 
 .nav {
-    padding-left: initial;
-    padding-right: 0;
+    padding-left: 0;
+    padding-right: initial;
 }
 
 
 .nav__item {
-    margin-right: initial;
-    margin-left: 2.75rem;
+    margin-right: 2.75rem;
+    margin-left: initial;
 }
 .news-item__date span {
-    padding-right: initial;
-    padding-left: 1.125rem;
-}
-.news-item__date span::after {
-    right:initial;
-    left: 0.4375rem;
-}
-.list-unstyled {
+    padding-right: 1.125rem;
     padding-left: initial;
-    padding-right: 0;
+}
+    .news-item__date span::after {
+        right: 0.4375rem;
+        left: initial;
+    }
+.list-unstyled {
+    padding-left: 0;
+    padding-right: initial;
 }
 .text-end {
-    text-align: left!important;
+    text-align: right!important;
 }
 .btn .font-icon {
-    margin-right: initial;
-    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    margin-left: initial;
 }
 .nav__item:last-child {
-    margin-right: initial;
-    margin-left: 0;
+    margin-right: 0;
+    margin-left: initial;
 }
 .block-quote::before {
-    left: initial;
-    right: -3.125rem;
+    left: -3.125rem;
+    right: initial;
 }
 .block-quote__author {
-    padding-left: initial;
-    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-right: initial;
 }
-.block-quote__author::before {
-    left: initial;
-    right: 0;
-}
+    .block-quote__author::before {
+        left: 0;
+        right: initial;
+    }
 .footer-post__share .font-icon {
-    margin-right: initial;
-    margin-left: 0.6875rem;
+    margin-right: 0.6875rem;
+    margin-left: initial;
 }
 .comment-box__body {
-    padding-left: initial;
-    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: initial;
 }
 .comment-box .comment-box {
+    margin-left: 3rem;
+    margin-right: initial;
+}
+.social-auth__item {
+    margin-right: 0.375rem;
     margin-left: initial;
-    margin-right: 3rem;
 }
 .social-auth__item {
-    margin-right: initial;
-    margin-left: 0.375rem;
-}
-.social-auth__item {
-    margin-right: initial;
-    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    margin-left: initial;
 }
 .comment-form .btn-submit {
-    right: initial;
-    left: 0;
-    margin-right: initial;
-    margin-left: 0.75rem;
+    right: 0;
+    left: initial;
+    margin-right: 0.75rem;
+    margin-left: initial;
 }
 .comment-form .dropdown {
-    margin-left: initial;
-    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+    margin-right: initial;
 }
 .comment-form .dropdown-menu::before {
-    left: initial;
-    right: 1rem;
+    left: 1rem;
+    right: initial;
 }
 .btn-back i {
-    margin-right: initial;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: initial;
 }
 .header-project .title {
-    left: initial;
-    right: 0;
+    left: 0;
+    right: initial;
     font-family: 'IRY';
 }
 .details-info--inline .details-info__item {
-    margin-right: initial;
-    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-left: initial;
 }
 
 
