@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Personal_Website.Helper;
 using Personal_Website.MiddleWare;
 using Personal_Website.Models;
 
@@ -137,11 +138,7 @@ namespace Personal_Website.Controllers
 
         public IActionResult ChangeLanguage(string lang, string returnURL)
         {
-            Response.Cookies.Append(
-                    CookieRequestCultureProvider.DefaultCookieName,
-                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(lang)),
-                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(7) });
-
+            CreateCultureCookies.Create(lang, Response);
             return Redirect(returnURL);
         }
 

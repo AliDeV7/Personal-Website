@@ -69,10 +69,7 @@ namespace Personal_Website.MiddleWare
                         break;
                 }
 
-                _accessor.HttpContext.Response.Cookies.Append(
-                            CookieRequestCultureProvider.DefaultCookieName,
-                            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(Culture)),
-                            CookieOptions);
+                CreateCultureCookies.Create(Culture, _accessor.HttpContext.Response);
 
             }
 
