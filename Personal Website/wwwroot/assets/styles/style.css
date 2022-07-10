@@ -832,6 +832,7 @@ button:focus {
   }
   .sidebar__base-info > * {
     min-width: 0;
+    margin-right:25px;
   }
 }
 

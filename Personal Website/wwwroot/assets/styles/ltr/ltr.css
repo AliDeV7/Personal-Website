@@ -7,80 +7,63 @@
 /*fonts*/
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-ExtraBlack.woff2') format('woff2'),
-    url('../../fonts/IRY-ExtraBlack.woff') format('woff'),
-    url('../../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
+    src: url('../../fonts/IRY-ExtraBlack.woff2') format('woff2'), url('../../fonts/IRY-ExtraBlack.woff') format('woff'), url('../../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-ExtraBold.woff2') format('woff2'),
-    url('../../fonts/IRY-ExtraBold.woff') format('woff'),
-    url('../../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
+    src: url('../../fonts/IRY-ExtraBold.woff2') format('woff2'), url('../../fonts/IRY-ExtraBold.woff') format('woff'), url('../../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-Black.woff2') format('woff2'),
-    url('../../fonts/IRY-Black.woff') format('woff'),
-    url('../../fonts/IRY-Black.svg#IRY-Black') format('svg');
+    src: url('../../fonts/IRY-Black.woff2') format('woff2'), url('../../fonts/IRY-Black.woff') format('woff'), url('../../fonts/IRY-Black.svg#IRY-Black') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-Light.woff2') format('woff2'),
-    url('../../fonts/IRY-Light.woff') format('woff'),
-    url('../../fonts/IRY-Light.svg#IRY-Light') format('svg');
+    src: url('../../fonts/IRY-Light.woff2') format('woff2'), url('../../fonts/IRY-Light.woff') format('woff'), url('../../fonts/IRY-Light.svg#IRY-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-Medium.woff2') format('woff2'),
-    url('../../fonts/IRY-Medium.woff') format('woff'),
-    url('../../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
+    src: url('../../fonts/IRY-Medium.woff2') format('woff2'), url('../../fonts/IRY-Medium.woff') format('woff'), url('../../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-Thin.woff2') format('woff2'),
-    url('../../fonts/IRY-Thin.woff') format('woff'),
-    url('../../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
+    src: url('../../fonts/IRY-Thin.woff2') format('woff2'), url('../../fonts/IRY-Thin.woff') format('woff'), url('../../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY-Bold.woff2') format('woff2'),
-    url('../../fonts/IRY-Bold.woff') format('woff'),
-    url('../../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
+    src: url('../../fonts/IRY-Bold.woff2') format('woff2'), url('../../fonts/IRY-Bold.woff') format('woff'), url('../../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../../fonts/IRY.woff2') format('woff2'),
-    url('../../fonts/IRY.woff') format('woff'),
-    url('../../fonts/IRY.svg#IRY') format('svg');
+    src: url('../../fonts/IRY.woff2') format('woff2'), url('../../fonts/IRY.woff') format('woff'), url('../../fonts/IRY.svg#IRY') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sarb';
-    src: url('../../fonts/Sarb-Regular.woff2') format('woff2'),
-    url('../../fonts/Sarb-Regular.woff') format('woff');
+    src: url('../../fonts/Sarb-Regular.woff2') format('woff2'), url('../../fonts/Sarb-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -137,7 +120,7 @@ html, body {
     --color-gradient: linear-gradient(137.84deg, #FFDB6E 26.31%, #FFBC5E 93.75%);
     --color-gradient-soft: linear-gradient(135deg, rgba(255, 218, 109, 0.0375) 0%, rgba(255, 189, 94, 0) 100%), #1E1E1F;
     --color-gradient-text: linear-gradient(90deg, #FFDB6E, #FFBC5E);
-    --color-gradient-border: linear-gradient(-155deg, #FFDA6D 0%, rgba(255, 191, 96, 0) 50%);
+    --color-gradient-border: linear-gradient(155deg, #FFDA6D 0%, rgba(255, 191, 96, 0) 50%);
     --color-gradient-border-gray: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 48.44%);
     --color-gradient-gray: linear-gradient(137.84deg, #3F3F40 2.69%, #303030 93.75%);
     --color-gradient-icon: linear-gradient(135deg, rgba(255, 218, 109, 0.25) 0%, rgba(255, 189, 94, 0) 59.86%), #202021;
@@ -162,45 +145,41 @@ html, body {
     padding-right: 0;
 }
 
-.icon-box {
+/*.icon-box {
     margin-right: initial;
     margin-left: 1rem;
-}
+}*/
 
 .nav-container {
-    right: initial;
-    left: 0;
-    border-radius: var(--radius-20) 0 var(--radius-20) 0;
+    right: 0;
+    left: initial;
+    border-radius: 0 var(--radius-20) 0 var(--radius-20);
 }
 
 .title__separate::before {
-    left: initial;
-    right: 0;
+    right: initial;
+    left: 0;
 }
 
 .case-item__icon {
-    margin-right: initial;
-    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-left: initial;
 }
 
 .review-item .title {
-    margin-left: initial;
-    margin-right: calc(5rem + 0.9375rem);
-}
-
-.review-item::before {
-    background-position: 0 0, left 1.875rem top 1.5rem;
+    margin-left: calc(5rem + 0.9375rem);
+    margin-right:initial;
 }
 
 
 
 .sidebar__btn {
     right: initial;
-    left: 0;
-    border-top-left-radius: var(--radius-14);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: var(--radius-14);
-    border-bottom-left-radius: 0;
+    right: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: var(--radius-14);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: var(--radius-14);
 }
 
 
@@ -212,13 +191,12 @@ html, body {
 .mfp-close {
     right: initial;
     left: 0.9375rem;
-
 }
 
-.mfp-close:focus {
-    right: initial;
-    left: 0.9375rem;
-}
+    .mfp-close:focus {
+        right: initial;
+        left: 0.9375rem;
+    }
 
 .timeline::before {
     border-right-color: var(--color-border);
@@ -229,27 +207,27 @@ html, body {
 }
 
 .timeline {
-    padding-left: initial;
-    padding-right: 1.5rem;
+    padding-right: initial;
+    padding-left: 1.5rem;
 }
 
 .timeline__item {
     border-right-color: var(--color-border);
-    border-left-width: 0;
-    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0;
     border-right-style: solid;
-    padding-left: initial;
-    padding-right: 2.5rem;
+    padding-right: initial;
+    padding-left: 2.5rem;
 }
 
-.timeline__item::before {
-    left: initial;
-    right: -0.3125rem;
-}
+    .timeline__item::before {
+        right: initial;
+        left: -0.3125rem;
+    }
 
 .back-to-top {
-    right: initial;
-    left: 2.5rem;
+    left: initial;
+    right: 2.5rem;
 }
 
 
@@ -264,84 +242,104 @@ html, body {
     margin-right: 2.75rem;
     margin-left: initial;
 }
+
 .news-item__date span {
     padding-right: 1.125rem;
     padding-left: initial;
 }
+
     .news-item__date span::after {
         right: 0.4375rem;
         left: initial;
     }
+
 .list-unstyled {
     padding-left: 0;
     padding-right: initial;
 }
+
 .text-end {
-    text-align: right!important;
+    text-align: right !important;
 }
+
 .btn .font-icon {
     margin-right: 0.375rem;
     margin-left: initial;
 }
+
 .nav__item:last-child {
     margin-right: 0;
     margin-left: initial;
 }
+
 .block-quote::before {
     left: -3.125rem;
     right: initial;
 }
+
 .block-quote__author {
     padding-left: 3rem;
     padding-right: initial;
 }
+
     .block-quote__author::before {
         left: 0;
         right: initial;
     }
+
 .footer-post__share .font-icon {
     margin-right: 0.6875rem;
     margin-left: initial;
 }
+
 .comment-box__body {
     padding-left: 1rem;
     padding-right: initial;
 }
+
 .comment-box .comment-box {
     margin-left: 3rem;
     margin-right: initial;
 }
+
 .social-auth__item {
     margin-right: 0.375rem;
     margin-left: initial;
 }
+
 .social-auth__item {
     margin-right: 0.375rem;
     margin-left: initial;
 }
+
 .comment-form .btn-submit {
     right: 0;
     left: initial;
     margin-right: 0.75rem;
     margin-left: initial;
 }
+
 .comment-form .dropdown {
     margin-left: 0.75rem;
     margin-right: initial;
 }
+
 .comment-form .dropdown-menu::before {
     left: 1rem;
     right: initial;
 }
+
 .btn-back i {
     margin-right: 0.5rem;
     margin-left: initial;
 }
+
 .header-project .title {
     left: 0;
     right: initial;
     font-family: 'IRY';
 }
+
 .details-info--inline .details-info__item {
     margin-right: 5rem;
     margin-left: initial;
@@ -361,11 +359,13 @@ html, body {
         margin: 0 0 0 1rem;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .social {
         text-align: right;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .timeline {
         padding-left: initial;
@@ -386,19 +386,21 @@ html, body {
         margin-left: 1.25rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .nav-container {
         border-radius: var(--radius-20) var(--radius-20) 0 0;
         left: initial;
         right: 0;
-
     }
 }
+
 @media only screen and (max-width: 580px) {
     .nav-container {
         border-radius: var(--radius-12) var(--radius-12) 0 0;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .timeline__item {
         padding-left: initial;
@@ -414,36 +416,41 @@ html, body {
         text-align: right;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .select .placeholder:after {
         right: initial;
         left: 0.125rem;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .select ul li {
         text-align: right;
-
     }
 }
+
 @media only screen and (min-width: 769px) {
     .filter__item {
         padding-right: initial;
         padding-left: 1.1875rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .block-quote::before {
         left: initial;
         right: 0;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .block-quote__author {
         padding-left: initial;
         padding-right: 2rem;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .comment-box .comment-box {
         margin-left: initial;
