@@ -3368,3 +3368,7 @@ button:focus {
   height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
+
+.disabled-link {
+    pointer-events: none;
+}
