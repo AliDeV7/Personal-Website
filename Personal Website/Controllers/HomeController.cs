@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Personal_Website.Helper;
 using Personal_Website.MiddleWare;
 using Personal_Website.Models;
+using Personal_Website.ViewModel;
 
 namespace Personal_Website.Controllers
 {
@@ -17,11 +18,13 @@ namespace Personal_Website.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly PersonlWebsiteDbContext _db;
         private string cultureName;
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, PersonlWebsiteDbContext db)
         {
             _logger = logger;
             cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(startIndex: 0, length: 2).ToLower();
+            _db = db;
         }
 
         [CheckIP]
@@ -136,6 +139,30 @@ namespace Personal_Website.Controllers
             }
         }
 
+        [Route("Home/SendTicket")]
+        public async Task<IActionResult> SendTicket(TicketViewModel model)
+        {
+            try
+            {
+                var NewTicket = new Ticket()
+                {
+                    Email = model.Email,
+                    Name = model.Name,
+                    Text = model.message,
+                    Status = TicketStatus.Open
+                };
+                await _db.AddAsync(NewTicket);
+                await _db.SaveChangesAsync();
+
+                // TODO : Add Successful Message for User
+            }
+            catch (Exception)
+            {
+                // TODO : Add Error Message
+                throw;
+            }
+            return RedirectToAction("Contact");
+        }
         public IActionResult ChangeLanguage(string lang, string returnURL)
         {
             CreateCultureCookies.Create(lang, Response);
