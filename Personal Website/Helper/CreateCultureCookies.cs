@@ -13,5 +13,10 @@ namespace Personal_Website.Helper
                     CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
                     new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(7) });
         }
+
+        public static string GetCurrent()
+        {
+            return System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(0, 2).ToLower();
+        }
     }
 }

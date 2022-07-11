@@ -28,15 +28,17 @@ namespace Personal_Website.MiddleWare
             public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
             {
                 /// Get Device Ip in accessor
-
-                CookieOptions CookieOptions = new CookieOptions() { Expires = DateTime.Now.AddDays(7) };
                 var CountryISO = await GetVisitorCountry();
-                CreateCultureByCountry(CountryISO, CookieOptions);
+
+                if (string.IsNullOrWhiteSpace(CreateCultureCookies.GetCurrent()))
+                {
+                    CreateCultureByCountry(CountryISO);
+                }
 
                 await next();
             }
 
-            private void CreateCultureByCountry(string CountryISO, CookieOptions CookieOptions)
+            private void CreateCultureByCountry(string CountryISO)
             {
                 string Culture = string.Empty;
                 switch (CountryISO.ToUpper())
@@ -110,6 +112,8 @@ namespace Personal_Website.MiddleWare
                 }
 
             }
+
+
 
         }
     }
