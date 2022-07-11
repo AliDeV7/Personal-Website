@@ -150,6 +150,9 @@
   <data name="Projects" xml:space="preserve">
     <value>نمونه کارها</value>
   </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>ارتباط با ایمیل</value>
+  </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>نمایش اطلاعات تماس</value>
   </data>

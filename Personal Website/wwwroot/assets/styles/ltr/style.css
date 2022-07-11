@@ -1030,6 +1030,20 @@ button:focus {
         margin-top: 1.875rem;
     }
 
+.sidebar__text {
+    background: var(--color-gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.details-info__item a:hover {
+    color: var(--color-accent);
+}
+
+.details-info__item a {
+    color: var(--color-heading);
+}
 /* -----------------------------------------------------------------
     - Sections
 ----------------------------------------------------------------- */
@@ -1348,9 +1362,6 @@ button:focus {
     text-decoration: none;
 }
 
-    .details-info__item a:hover {
-        color: var(--color-heading);
-    }
 
 .details-info--inline .details-info__item {
     display: -webkit-inline-box;

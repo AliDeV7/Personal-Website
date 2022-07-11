@@ -127,7 +127,7 @@
     <value>Blog</value>
   </data>
   <data name="ContactMe" xml:space="preserve">
-    <value>Contact Me</value>
+    <value>Contact</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
@@ -139,7 +139,7 @@
     <value>Location</value>
   </data>
   <data name="MyResume" xml:space="preserve">
-    <value>My Resume</value>
+    <value>Resume</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Ali Ahmadi</value>
@@ -149,6 +149,9 @@
   </data>
   <data name="Projects" xml:space="preserve">
     <value>Projects</value>
+  </data>
+  <data name="SendEmail" xml:space="preserve">
+    <value>Contant with Email</value>
   </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>Show contact info</value>
