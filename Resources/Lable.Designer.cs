@@ -88,7 +88,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact Me.
+        ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string ContactMe {
             get {
@@ -124,7 +124,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My Resume.
+        ///   Looks up a localized string similar to Resume.
         /// </summary>
         public static string MyResume {
             get {
@@ -156,6 +156,15 @@ namespace Resources {
         public static string Projects {
             get {
                 return ResourceManager.GetString("Projects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contant with Email.
+        /// </summary>
+        public static string SendEmail {
+            get {
+                return ResourceManager.GetString("SendEmail", resourceCulture);
             }
         }
         
