@@ -126,6 +126,9 @@
   <data name="Blog" xml:space="preserve">
     <value>Blog</value>
   </data>
+  <data name="btnGoHome" xml:space="preserve">
+    <value>Go Home</value>
+  </data>
   <data name="ContactMe" xml:space="preserve">
     <value>Contact</value>
   </data>

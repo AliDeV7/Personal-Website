@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+    // LTR
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="~/assets/error/Ltr/css/styles.css">
+
+    <title>Responsive 404 website - Bedimcode</title>
+</head>
+<body>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home">
+            <div class="home__container container">
+                <div class="home__data">
+                    <span class="home__subtitle">@Resources.Data.error404</span>
+                    <h1 class="home__title">@Resources.Data.heyBuddy</h1>
+                    <p class="home__description">
+                        @Html.Raw(@Resources.Data.error404text)
+                    </p>
+                    <a href="home/Start" class="home__button">
+                        @Resources.Lable.btnGoHome
+                    </a>
+                </div>
+                <div class="home__img">
+                    <img src="~/assets/error/Ltr/img/ghost-img.png" alt="">
+                    <div class="home__shadow"></div>
+                </div>
+            </div>
+
+            <footer class="home__footer">
+                <span>@Resources.Lable.Name</span>
+                <span>|</span>
+                <span>@Resources.Lable.Email</span>
+            </footer>
+        </section>
+    </main>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="~/assets/error/Ltr/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="~/assets/error/Ltr/js/main.js"></script>
+</body>
+</html>

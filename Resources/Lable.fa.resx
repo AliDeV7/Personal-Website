@@ -126,6 +126,9 @@
   <data name="Blog" xml:space="preserve">
     <value>وبلاگ</value>
   </data>
+  <data name="btnGoHome" xml:space="preserve">
+    <value>بازگشت به خانه</value>
+  </data>
   <data name="ContactMe" xml:space="preserve">
     <value>تماس با من</value>
   </data>

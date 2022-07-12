@@ -169,10 +169,21 @@ namespace Personal_Website.Controllers
             return Redirect(returnURL);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error404()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Error404");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Error404");
+                    }
+            }
         }
     }
 }
