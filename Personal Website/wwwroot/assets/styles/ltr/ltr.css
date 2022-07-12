@@ -68,10 +68,12 @@
     font-style: normal;
 }
 
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 
 /*typography*/
 body, .sidebar__user-name, .tooltip-inner, h3, h4, h5 {
-    font-family: 'IRY';
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -88,11 +90,11 @@ h3, h5 {
 }
 
 h1, h2, h6, .review-item .title {
-    font-family: 'Sarb';
+    font-family: 'Space Grotesk';
 }
 
 .news-item .title, .header-post .title {
-    font-family: 'IRY';
+    font-family: 'Space Grotesk';
     font-weight: 800;
 }
 
@@ -105,7 +107,7 @@ html, body {
 }
 
 :root {
-    --font-family: 'IRY', sans-serif;
+    --font-family: 'Space Grotesk', sans-serif;
     --font-base-size: 15px;
     --font-mobile-size: 14px;
     --color-heading: #FCFCFC;
@@ -168,7 +170,7 @@ html, body {
 
 .review-item .title {
     margin-left: calc(5rem + 0.9375rem);
-    margin-right:initial;
+    margin-right: initial;
 }
 
 
