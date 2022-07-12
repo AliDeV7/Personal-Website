@@ -59,5 +59,41 @@ namespace Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ahmadi.ali2219@gmail.com.
+        /// </summary>
+        public static string EmailAddress {
+            get {
+                return ResourceManager.GetString("EmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error 404.
+        /// </summary>
+        public static string error404 {
+            get {
+                return ResourceManager.GetString("error404", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We can&apos;t seem to find the page &lt;br&gt; you are looking for :(.
+        /// </summary>
+        public static string error404text {
+            get {
+                return ResourceManager.GetString("error404text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hey Buddy.
+        /// </summary>
+        public static string heyBuddy {
+            get {
+                return ResourceManager.GetString("heyBuddy", resourceCulture);
+            }
+        }
     }
 }

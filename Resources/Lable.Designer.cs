@@ -88,6 +88,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Go Home.
+        /// </summary>
+        public static string btnGoHome {
+            get {
+                return ResourceManager.GetString("btnGoHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string ContactMe {
