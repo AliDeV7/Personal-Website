@@ -120,6 +120,24 @@ namespace Personal_Website.Controllers
                     }
             }
         }
+
+        [Route("Projects/{name}")]
+        public IActionResult GetProject(int name)
+        {
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View($"Rtl/{name}");
+                    }
+
+                default:
+                    {
+                        return View($"Ltr/{name}");
+                    }
+            }
+        }
         public IActionResult SelectedPage(string page)
         {
             switch (page)
