@@ -72,6 +72,8 @@ namespace Personal_Website
                     await next();
                 }
             });
+            app.UseCookiePolicy();
+
             /// Register Globalization
             app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
@@ -89,7 +91,6 @@ namespace Personal_Website
                     pattern: "{controller=Home}/{action=Start}/{id?}");
             });
 
-            app.UseCookiePolicy();
         }
     }
 }

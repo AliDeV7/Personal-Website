@@ -15,11 +15,11 @@ namespace Personal_Website.Helper
         }
         public static void CreateDirection(string direction, HttpResponse Response)
         {
-            Response.HttpContext.Response.Cookies.Append("visitorDirection", direction, new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
+            Response.HttpContext.Response.Cookies.Append("visitorDirection", direction, new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(7) });
         }
         public static void CreateWarningChangeLanguage(HttpResponse Response)
         {
-            Response.HttpContext.Response.Cookies.Append("warningChangeLanguage", "1", new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
+            Response.HttpContext.Response.Cookies.Append("warningChangeLanguage", "1", new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(7) });
         }
 
         public static string GetCurrent()

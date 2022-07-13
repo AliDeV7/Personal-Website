@@ -50,7 +50,6 @@ namespace Personal_Website.Controllers
                     }
             }
         }
-
         [Route("Resume")]
         public IActionResult Resume()
         {
@@ -68,7 +67,6 @@ namespace Personal_Website.Controllers
                     }
             }
         }
-
         //public IActionResult Blog()
         //{
         //    switch (cultureName)
@@ -85,7 +83,6 @@ namespace Personal_Website.Controllers
         //            }
         //    }
         //}
-
         [Route("Contact")]
         public IActionResult Contact()
         {
@@ -103,7 +100,6 @@ namespace Personal_Website.Controllers
                     }
             }
         }
-
         [Route("Projects")]
         public IActionResult Projects()
         {
