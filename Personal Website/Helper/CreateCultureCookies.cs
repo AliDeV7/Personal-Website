@@ -11,7 +11,7 @@ namespace Personal_Website.Helper
             Response.Cookies.Append(
                     CookieRequestCultureProvider.DefaultCookieName,
                     CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(7) });
+                    new CookieOptions { Expires = DateTimeOffset.UtcNow.AddDays(7) });
         }
 
         public static string GetCurrent()

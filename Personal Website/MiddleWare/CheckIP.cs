@@ -27,12 +27,35 @@ namespace Personal_Website.MiddleWare
             }
             public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
             {
-                /// Get Device Ip in accessor
+                /// Get User Country by IP
                 var CountryISO = await GetVisitorCountry();
+                var visitorCountryCookie = _accessor.HttpContext.Request.Cookies["visitorCountry"];
 
-                if (string.IsNullOrWhiteSpace(CreateCultureCookies.GetCurrent()))
+                /// Is it First Time visit or not
+                if (string.IsNullOrWhiteSpace(visitorCountryCookie))
                 {
-                    CreateCultureByCountry(CountryISO);
+                    if (!string.IsNullOrWhiteSpace(CountryISO))
+                    {
+                        CreateVistorCookie(CountryISO);
+                        CreateCultureByCountry(CountryISO);
+                    }
+                    else
+                    {
+                        CreateCultureByCountry("OTHER");
+                    }
+                }
+                /// Not first time visit
+                else
+                {
+                    if (!string.IsNullOrWhiteSpace(CountryISO))
+                    {
+                        if (visitorCountryCookie.ToUpper() != CountryISO.ToUpper())
+                            CreateVistorCookie(CountryISO);
+                    }
+                    else
+                    {
+                        CreateCultureByCountry("OTHER");
+                    }
                 }
 
                 await next();
@@ -75,24 +98,9 @@ namespace Personal_Website.MiddleWare
 
             }
 
-            private async Task<string> CreateVistorCookie(CookieOptions CookieOptions)
+            private void CreateVistorCookie(string ISO)
             {
-                //var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-                var VistorIP = "79.127.83.207";
-                var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
-                var IpFromIran = await _db.IPRanges.AnyAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
-                if (IpFromIran)
-                {
-                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "IR", CookieOptions);
-                    return "IR";
-                }
-
-                else
-                {
-                    _accessor.HttpContext.Response.Cookies.Append("visitorCountry", "Other", CookieOptions);
-                    return "OTHER";
-                }
-
+                _accessor.HttpContext.Response.Cookies.Append("visitorCountry", ISO, new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
             }
 
             private async Task<string> GetVisitorCountry()
@@ -108,13 +116,10 @@ namespace Personal_Website.MiddleWare
 
                 else
                 {
-                    return "OTHER";
+                    return null;
                 }
 
             }
-
-
-
         }
     }
 }
