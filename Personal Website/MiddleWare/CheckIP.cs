@@ -63,7 +63,7 @@ namespace Personal_Website.MiddleWare
 
             private void CreateCultureByCountry(string CountryISO)
             {
-                string Culture = string.Empty;
+                string Culture;
                 switch (CountryISO.ToUpper())
                 {
                     case "IR":
@@ -110,15 +110,10 @@ namespace Personal_Website.MiddleWare
                 var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
                 var IPCountry = await _db.IPRanges.Include(x => x.Country).FirstOrDefaultAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
                 if (IPCountry != null)
-                {
                     return IPCountry.Country.ISO;
-                }
-
+                
                 else
-                {
                     return null;
-                }
-
             }
         }
     }
