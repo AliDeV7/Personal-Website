@@ -17,14 +17,15 @@ namespace Personal_Website.Controllers
     [VisitCounter]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly PersonlWebsiteDbContext _db;
         private string cultureName;
-        public HomeController(ILogger<HomeController> logger, PersonlWebsiteDbContext db)
+        private readonly IHttpContextAccessor _accessor;
+
+        public HomeController(PersonlWebsiteDbContext db, IHttpContextAccessor _accessor)
         {
-            _logger = logger;
             cultureName = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.Substring(startIndex: 0, length: 2).ToLower();
             _db = db;
+            this._accessor = _accessor;
         }
 
         [CheckIP]
@@ -181,9 +182,17 @@ namespace Personal_Website.Controllers
             }
             return RedirectToAction("Contact");
         }
-        public IActionResult ChangeLanguage(string lang, string returnURL)
+        public IActionResult ChangeLanguage(string culture, string returnURL)
         {
-            CreateCultureCookies.Create(lang, Response);
+            CreateCultureCookies.Create(culture, Response);
+            var visitorDirectionCookie = _accessor.HttpContext.Request.Cookies["visitorDirection"];
+            if (!string.IsNullOrWhiteSpace(visitorDirectionCookie))
+            {
+                if (visitorDirectionCookie.ToLower() == "ltr")
+                    CreateCultureCookies.CreateDirection("rtl", _accessor.HttpContext.Response);
+                else
+                    CreateCultureCookies.CreateDirection("ltr", _accessor.HttpContext.Response);
+            }
             return Redirect(returnURL);
         }
 

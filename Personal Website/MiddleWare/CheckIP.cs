@@ -29,45 +29,38 @@ namespace Personal_Website.MiddleWare
             {
                 /// Get User Country by IP
                 var CountryISO = await GetVisitorCountry();
-                var visitorCountryCookie = _accessor.HttpContext.Request.Cookies["visitorCountry"];
+                var visitorDirectionCookie = _accessor.HttpContext.Request.Cookies["visitorDirection"];
 
                 /// Is it First Time visit or not
-                if (string.IsNullOrWhiteSpace(visitorCountryCookie))
+                if (string.IsNullOrWhiteSpace(visitorDirectionCookie))
                 {
-                    if (!string.IsNullOrWhiteSpace(CountryISO))
-                    {
-                        CreateVistorCookie(CountryISO);
-                        CreateCultureByCountry(CountryISO);
-                    }
-                    else
-                    {
-                        CreateCultureByCountry("OTHER");
-                    }
+                    CreateCultureDirectionByCountry(CountryISO);
                 }
                 /// Not first time visit
                 else
                 {
-                    if (!string.IsNullOrWhiteSpace(CountryISO))
-                    {
-                        if (visitorCountryCookie.ToUpper() != CountryISO.ToUpper())
-                            CreateVistorCookie(CountryISO);
-                    }
-                    else
-                    {
-                        CreateCultureByCountry("OTHER");
-                    }
+
                 }
 
                 await next();
             }
 
-            private void CreateCultureByCountry(string CountryISO)
+            private void CreateCultureDirectionByCountry(string CountryISO)
+            {
+                var CultureModel = GetCultureModelByCountry(CountryISO);
+                CreateCultureCookies.Create(CultureModel.Culture, _accessor.HttpContext.Response);
+                CreateCultureCookies.CreateDirection(CultureModel.Direction, _accessor.HttpContext.Response);
+            }
+
+            public CultureModel GetCultureModelByCountry(string CountryISO)
             {
                 string Culture;
-                switch (CountryISO.ToUpper())
+                string Direction;
+                switch (CountryISO)
                 {
                     case "IR":
                         Culture = "fa";
+                        Direction = "rtl";
                         break;
 
                     //Arabic Countries
@@ -83,24 +76,26 @@ namespace Personal_Website.MiddleWare
                     case "KW":
                     case "EG":
                         Culture = "en";
+                        Direction = "rtl";
                         break;
 
                     case "OTHER":
                         Culture = "en";
+                        Direction = "ltr";
+                        break;
+
+                    case null:
+                        Culture = "en";
+                        Direction = "ltr";
                         break;
 
                     default:
                         Culture = "en";
+                        Direction = "ltr";
                         break;
                 }
 
-                CreateCultureCookies.Create(Culture, _accessor.HttpContext.Response);
-
-            }
-
-            private void CreateVistorCookie(string ISO)
-            {
-                _accessor.HttpContext.Response.Cookies.Append("visitorCountry", ISO, new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
+                return new CultureModel() { Direction = Direction, Culture = Culture };
             }
 
             private async Task<string> GetVisitorCountry()
@@ -111,9 +106,14 @@ namespace Personal_Website.MiddleWare
                 var IPCountry = await _db.IPRanges.Include(x => x.Country).FirstOrDefaultAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
                 if (IPCountry != null)
                     return IPCountry.Country.ISO;
-                
+
                 else
                     return null;
+            }
+            public class CultureModel
+            {
+                public string Culture { get; set; }
+                public string Direction { get; set; }
             }
         }
     }
