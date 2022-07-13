@@ -119,7 +119,7 @@ namespace Personal_Website.Controllers
         }
 
         [Route("Projects/{name}")]
-        public IActionResult GetProject(int name)
+        public IActionResult GetProject(string name)
         {
             switch (cultureName)
             {
