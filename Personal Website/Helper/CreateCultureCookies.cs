@@ -17,7 +17,10 @@ namespace Personal_Website.Helper
         {
             Response.HttpContext.Response.Cookies.Append("visitorDirection", direction, new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
         }
-
+        public static void CreateWarningChangeLanguage(HttpResponse Response)
+        {
+            Response.HttpContext.Response.Cookies.Append("warningChangeLanguage", "1", new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddDays(1) });
+        }
 
         public static string GetCurrent()
         {

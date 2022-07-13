@@ -33,13 +33,17 @@ namespace Personal_Website.MiddleWare
 
                 /// Is it First Time visit or not
                 if (string.IsNullOrWhiteSpace(visitorDirectionCookie))
-                {
                     CreateCultureDirectionByCountry(CountryISO);
-                }
+                
                 /// Not first time visit
                 else
                 {
+                    ///// Trigger something for user to check if want to continue with last language
+                    //if (!string.IsNullOrWhiteSpace(CountryISO))
+                    //{
+                    //    //var CultureModel = GetCultureModelByCountry(CountryISO);
 
+                    //}
                 }
 
                 await next();
