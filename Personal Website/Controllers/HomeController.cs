@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
@@ -29,10 +30,23 @@ namespace Personal_Website.Controllers
         }
 
         [CheckIP]
-        public IActionResult Start()
+        public IActionResult Index()
         {
-            return RedirectToAction("Home");
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Index");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Index");
+                    }
+            }
         }
+
         [Route("Home")]
         public IActionResult Home()
         {
@@ -208,5 +222,11 @@ namespace Personal_Website.Controllers
                     }
             }
         }
+        //[Route("get")]
+        //public bool get()
+        //{
+        //    Thread.Sleep(2000);
+        //    return true;
+        //}
     }
 }

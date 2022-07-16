@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = @Resources.PageTitle.Home;
 }
 <!-- About -->
 <div class="pb-0 pb-sm-2">
@@ -210,6 +210,8 @@
         </figure>
     </div>
 </div>
-
-<!-- JavaScripts -->
-<script src="~/assets/js/common.js"></script>
+<script>
+    let home = document.getElementById('homemenu');
+    home.classList.add("active");
+    home.classList.add("disabled-link");
+</script>
