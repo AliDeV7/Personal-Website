@@ -55,6 +55,10 @@
 
     <!-- Font-awesome -->
     <link rel="stylesheet" type="text/css" href="~/lib/font-awesome/css/all.css" />
+
+    <!-- Preload -->
+    <link rel="stylesheet" type="text/css" href="~/assets/preload/Preload.css" />
+
 </head>
 <body>
     <main class="main">
@@ -70,7 +74,7 @@
                         <!-- Menu -->
                         <partial name="../Shared/PartialViews/Rtl/Menu" />
                         <div id="mainDiv">
-                        @RenderBody()
+                            @RenderBody()
                         </div>
                     </div><!-- box-outer -->
                 </div><!-- Content -->
@@ -80,6 +84,7 @@
 
     <div class="back-to-top"></div>
 
+
     <!-- JavaScripts -->
     <script src="~/assets/js/jquery-3.4.1.min.js"></script>
     <script src="~/assets/js/plugins.min.js"></script>
@@ -87,3 +92,32 @@
 
 </body>
 </html>
+@*<div class="pre-loader">
+    <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+<script>
+    (function($){
+      'use strict';
+        $(window).on('load', function () {
+                $(".pre-loader").fadeIn("slow");
+             $.post('/get',function(status){
+                 if(status === true){
+                $(".pre-loader").fadeOut("slow");
+                 }
+             });
+        });
+    })(jQuery)
+</script>*@

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
@@ -221,5 +222,11 @@ namespace Personal_Website.Controllers
                     }
             }
         }
+        //[Route("get")]
+        //public bool get()
+        //{
+        //    Thread.Sleep(2000);
+        //    return true;
+        //}
     }
 }
