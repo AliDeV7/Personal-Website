@@ -29,10 +29,23 @@ namespace Personal_Website.Controllers
         }
 
         [CheckIP]
-        public IActionResult Start()
+        public IActionResult Index()
         {
-            return RedirectToAction("Home");
+            switch (cultureName)
+            {
+                case "fa":
+                case "ar":
+                    {
+                        return View("Rtl/Index");
+                    }
+
+                default:
+                    {
+                        return View("Ltr/Index");
+                    }
+            }
         }
+
         [Route("Home")]
         public IActionResult Home()
         {

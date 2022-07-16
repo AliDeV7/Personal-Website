@@ -68,7 +68,9 @@
                     <div class="box-outer">
                         <!-- Menu -->
                         <partial name="../Shared/PartialViews/Ltr/Menu" />
-                        @RenderBody()
+                        <div id="mainDiv">
+                            @RenderBody()
+                        </div>
                     </div><!-- box-outer -->
                 </div><!-- Content -->
             </div><!-- sticky-parent -->

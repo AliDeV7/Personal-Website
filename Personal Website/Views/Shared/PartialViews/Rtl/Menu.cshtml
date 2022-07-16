@@ -5,11 +5,12 @@
 
 <div class="nav-container">
     <ul class="nav">
-        <li class="nav__item"><a id="homemenu" href="/home/SelectedPage?page=home">@Resources.Lable.About</a></li>
-        <li class="nav__item"><a id="resumemenu" onclick="pageNavigate('resume')" href="/home/SelectedPage?page=resume">@Resources.Lable.MyResume</a></li>
-        <li class="nav__item"><a id="projectsmenu" onclick="pageNavigate('projects')" href="/home/SelectedPage?page=projects">@Resources.Lable.Projects</a></li>
-        <li class="nav__item"><a id="contactmenu" onclick="pageNavigate('contact')" href="/home/SelectedPage?page=contact">@Resources.Lable.ContactMe</a></li>
+        <li class="nav__item"><a id="homemenu" onclick="pageNavigate('home')">@Resources.Lable.About</a></li>
+        <li class="nav__item"><a id="resumemenu" onclick="pageNavigate('resume')">@Resources.Lable.MyResume</a></li>
+        <li class="nav__item"><a id="projectsmenu" onclick="pageNavigate('projects')">@Resources.Lable.Projects</a></li>
+        <li class="nav__item"><a id="contactmenu" onclick="pageNavigate('contact')">@Resources.Lable.ContactMe</a></li>
         <li class="nav__item" style="margin-right:3rem"><a asp-action="changeLanguage" asp-controller="Home" asp-route-culture="en" asp-route-returnUrl="@returnURL">English</a></li>
-        @* <li class="nav__item"><a href="/home/SelectedPage?page=blog">@Resources.Lable.Blog</a></li>*@
     </ul>
 </div>
+
+<script src="~/assets/js/menu.js"></script>

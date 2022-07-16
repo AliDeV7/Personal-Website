@@ -55,7 +55,6 @@
 
     <!-- Font-awesome -->
     <link rel="stylesheet" type="text/css" href="~/lib/font-awesome/css/all.css" />
-
 </head>
 <body>
     <main class="main">
@@ -70,7 +69,9 @@
                     <div class="box-outer">
                         <!-- Menu -->
                         <partial name="../Shared/PartialViews/Rtl/Menu" />
+                        <div id="mainDiv">
                         @RenderBody()
+                        </div>
                     </div><!-- box-outer -->
                 </div><!-- Content -->
             </div><!-- sticky-parent -->
