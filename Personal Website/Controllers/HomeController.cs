@@ -222,11 +222,10 @@ namespace Personal_Website.Controllers
                     }
             }
         }
-        //[Route("get")]
-        //public bool get()
-        //{
-        //    Thread.Sleep(2000);
-        //    return true;
-        //}
+       
+        public IActionResult get()
+        {
+            return View();
+        }
     }
 }
