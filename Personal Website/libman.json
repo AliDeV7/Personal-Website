@@ -9,6 +9,10 @@
     {
       "library": "font-awesome@6.1.1",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "imagehover.css@2.0.0",
+      "destination": "wwwroot/lib/imagehover.css/"
     }
   ]
 }

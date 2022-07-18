@@ -1,6 +1,10 @@
 ﻿@{
     Layout = null;
+    // RTL
 }
+<!-- Imagehover -->
+<link rel="stylesheet" type="text/css" href="~/lib/imagehover.css/css/imagehover.css" />
+
 <!-- About -->
 <div class="pb-3">
     <h1 class="title title--h1 title__separate">نمونه کار ها</h1>
@@ -25,9 +29,14 @@
     <!-- Item 1 -->
     <div class="gallery-grid__item category-design">
         <a href="/GetProject?name=alobodo">
-            <div class="gallery-grid__image-wrap">
-                <img class="gallery-grid__image cover lazyload" src="~/assets/images/projects/project-1.jpg" alt="" />
-            </div>
+            <figure class="imghvr-shutter-in-out-diag-1">
+                <img src="~/assets/images/projects/project-1.jpg" alt="" />
+                <div class="container">
+                    <figcaption>
+                        <i class="fa-solid fa-circle-info" style="font-size:2.5rem;color:#fcb221"> More</i>
+                    </figcaption>
+                </div>
+            </figure>
             <div class="gallery-grid__caption">
                 <h3 class="title gallery-grid__title">طراحی مونوبرد</h3>
                 <span class="gallery-grid__category">طراحی وب</span>
@@ -126,6 +135,5 @@
         </a>
     </div>
 </div><!-- /Gallery -->
-
 <!-- JavaScripts -->
 <script src="~/assets/js/common.js"></script>
