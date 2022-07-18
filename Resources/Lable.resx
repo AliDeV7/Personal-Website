@@ -156,6 +156,9 @@
   <data name="SendEmail" xml:space="preserve">
     <value>Contant with Email</value>
   </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>Show contact info</value>
   </data>

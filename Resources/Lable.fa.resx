@@ -156,6 +156,9 @@
   <data name="SendEmail" xml:space="preserve">
     <value>ارتباط با ایمیل</value>
   </data>
+  <data name="Show" xml:space="preserve">
+    <value>نمایش</value>
+  </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>نمایش اطلاعات تماس</value>
   </data>
