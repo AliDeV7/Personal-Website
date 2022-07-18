@@ -1944,8 +1944,8 @@ button:focus {
 
 .gallery-grid__image-wrap {
     border-radius: var(--radius-16);
-    max-height: 12.75rem;
-    height: 13vw;
+/*    max-height: 12.75rem;
+    height: 13vw;*/
     overflow: hidden;
     position: relative;
     width: 100%;
