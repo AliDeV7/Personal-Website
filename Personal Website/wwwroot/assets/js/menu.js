@@ -1,7 +1,9 @@
 function pageNavigate(menu) {
     $.post(`/${menu}`, function (content) {
         $('#mainDiv').html("");
+        $('#mainDiv').removeClass('animation-page');
         $('#mainDiv').html(content);
+        //$('#mainDiv').addClass('animation-page').html(content);
 
         $('#homemenu').removeClass("active");
         $('#homemenu').removeClass("disabled-link");
@@ -17,5 +19,7 @@ function pageNavigate(menu) {
 
         $(`#${menu}menu`).addClass("active");
         $(`#${menu}menu`).addClass("disabled-link");
+
+
     })
 }
