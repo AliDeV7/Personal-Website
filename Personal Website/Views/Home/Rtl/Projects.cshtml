@@ -1,6 +1,7 @@
 ﻿@{
     Layout = null;
     // RTL
+    var label = @Resources.Lable.Show;
 }
 <!-- Imagehover -->
 <link rel="stylesheet" type="text/css" href="~/lib/imagehover.css/css/imagehover.css" />
@@ -28,13 +29,10 @@
     <div class="gutter-sizer"></div>
     <!-- Item 1 -->
     <div class="gallery-grid__item category-design">
-        <a href="/GetProject?name=alobodo">
-            <figure class="imghvr-shutter-in-out-diag-1">
+       <a href="/GetProject?name=alobodo">
+            <figure class="imghvr-shutter-in-out-diag-1" onmouseover="showelemet(this)">
                 <img src="~/assets/images/projects/project-3.jpg" alt="" />
                 <div class="container">
-                    <figcaption>
-                        <i class="fa-solid fa-circle-info" style="font-size:2.1rem"> <span style="font-family:IRY">@Resources.Lable.Show</span></i>
-                    </figcaption>
                 </div>
             </figure>
             <div class="gallery-grid__caption">
@@ -43,7 +41,7 @@
             </div>
         </a>
     </div>
-
+    
     <!-- Item 2 -->
     <div class="gallery-grid__item category-applications">
         <a href="single-project.html">
@@ -141,4 +139,10 @@
     </div>
 </div><!-- /Gallery -->
 <!-- JavaScripts -->
+<script>
+function showelemet(element) {
+    element.childNodes[3].innerHTML = `<figcaption><i class="fa-solid fa-circle-info" style="font-size:2.1rem"> <span style="font-family:IRY">@Resources.Lable.Show</span></i></figcaption>`;
+}
+
+</script>
 <script src="~/assets/js/common.js"></script>

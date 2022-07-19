@@ -1,7 +1,14 @@
 function pageNavigate(menu) {
     $.post(`/${menu}`, function (content) {
-        $('#mainDiv').html("");
-        $('#mainDiv').html(content);
+
+        //let mainDiv = document.getElementById('mainDiv');
+        //if (mainDiv.classList.contains('animation-page')) {
+        //    mainDiv.classList.remove('animation-page');
+        //}
+
+        //$('#mainDiv').html(content);
+        //$('#mainDiv').addClass('animation-page').html(content);
+        $('#mainDiv').html(`<div class="animation-page">${content}</div>`);
 
         $('#homemenu').removeClass("active");
         $('#homemenu').removeClass("disabled-link");
@@ -17,5 +24,6 @@ function pageNavigate(menu) {
 
         $(`#${menu}menu`).addClass("active");
         $(`#${menu}menu`).addClass("disabled-link");
+
     })
 }

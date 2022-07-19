@@ -640,6 +640,8 @@
     transition: all .4s ease;
 }
 
+
+
 /* Hover Text
    ----------------------------- */
 [class^='imghvr-shutter-in-'] figcaption i, [class*=' imghvr-shutter-in-'] figcaption i {
