@@ -29,11 +29,11 @@
     }
 
     [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+        color: #000000;
         position: absolute;
         margin: 0;
         top: 50%;
         left: 50%;
-        color: #000000;
         width: 100%;
         text-align: center;
         -ms-transform: translate(-50%, -50%);

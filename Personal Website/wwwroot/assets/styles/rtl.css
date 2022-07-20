@@ -7,80 +7,63 @@
 /*fonts*/
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-ExtraBlack.woff2') format('woff2'),
-    url('../fonts/IRY-ExtraBlack.woff') format('woff'),
-    url('../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
+    src: url('../fonts/IRY-ExtraBlack.woff2') format('woff2'), url('../fonts/IRY-ExtraBlack.woff') format('woff'), url('../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-ExtraBold.woff2') format('woff2'),
-    url('../fonts/IRY-ExtraBold.woff') format('woff'),
-    url('../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
+    src: url('../fonts/IRY-ExtraBold.woff2') format('woff2'), url('../fonts/IRY-ExtraBold.woff') format('woff'), url('../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Black.woff2') format('woff2'),
-    url('../fonts/IRY-Black.woff') format('woff'),
-    url('../fonts/IRY-Black.svg#IRY-Black') format('svg');
+    src: url('../fonts/IRY-Black.woff2') format('woff2'), url('../fonts/IRY-Black.woff') format('woff'), url('../fonts/IRY-Black.svg#IRY-Black') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Light.woff2') format('woff2'),
-    url('../fonts/IRY-Light.woff') format('woff'),
-    url('../fonts/IRY-Light.svg#IRY-Light') format('svg');
+    src: url('../fonts/IRY-Light.woff2') format('woff2'), url('../fonts/IRY-Light.woff') format('woff'), url('../fonts/IRY-Light.svg#IRY-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Medium.woff2') format('woff2'),
-    url('../fonts/IRY-Medium.woff') format('woff'),
-    url('../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
+    src: url('../fonts/IRY-Medium.woff2') format('woff2'), url('../fonts/IRY-Medium.woff') format('woff'), url('../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Thin.woff2') format('woff2'),
-    url('../fonts/IRY-Thin.woff') format('woff'),
-    url('../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
+    src: url('../fonts/IRY-Thin.woff2') format('woff2'), url('../fonts/IRY-Thin.woff') format('woff'), url('../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY-Bold.woff2') format('woff2'),
-    url('../fonts/IRY-Bold.woff') format('woff'),
-    url('../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
+    src: url('../fonts/IRY-Bold.woff2') format('woff2'), url('../fonts/IRY-Bold.woff') format('woff'), url('../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'IRY';
-    src: url('../fonts/IRY.woff2') format('woff2'),
-    url('../fonts/IRY.woff') format('woff'),
-    url('../fonts/IRY.svg#IRY') format('svg');
+    src: url('../fonts/IRY.woff2') format('woff2'), url('../fonts/IRY.woff') format('woff'), url('../fonts/IRY.svg#IRY') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Sarb';
-    src: url('../fonts/Sarb-Regular.woff2') format('woff2'),
-    url('../fonts/Sarb-Regular.woff') format('woff');
+    src: url('../fonts/Sarb-Regular.woff2') format('woff2'), url('../fonts/Sarb-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -212,13 +195,12 @@ html, body {
 .mfp-close {
     right: initial;
     left: 0.9375rem;
-
 }
 
-.mfp-close:focus {
-    right: initial;
-    left: 0.9375rem;
-}
+    .mfp-close:focus {
+        right: initial;
+        left: 0.9375rem;
+    }
 
 .timeline::before {
     border-right-color: var(--color-border);
@@ -242,10 +224,10 @@ html, body {
     padding-right: 2.5rem;
 }
 
-.timeline__item::before {
-    left: initial;
-    right: -0.3125rem;
-}
+    .timeline__item::before {
+        left: initial;
+        right: -0.3125rem;
+    }
 
 .back-to-top {
     right: initial;
@@ -264,84 +246,104 @@ html, body {
     margin-right: initial;
     margin-left: 2.75rem;
 }
+
 .news-item__date span {
     padding-right: initial;
     padding-left: 1.125rem;
 }
-.news-item__date span::after {
-    right:initial;
-    left: 0.4375rem;
-}
+
+    .news-item__date span::after {
+        right: initial;
+        left: 0.4375rem;
+    }
+
 .list-unstyled {
     padding-left: initial;
     padding-right: 0;
 }
+
 .text-end {
-    text-align: left!important;
+    text-align: left !important;
 }
+
 .btn .font-icon {
     margin-right: initial;
     margin-left: 0.375rem;
 }
+
 .nav__item:last-child {
     margin-right: initial;
     margin-left: 0;
 }
+
 .block-quote::before {
     left: initial;
     right: -3.125rem;
 }
+
 .block-quote__author {
     padding-left: initial;
     padding-right: 3rem;
 }
-.block-quote__author::before {
-    left: initial;
-    right: 0;
-}
+
+    .block-quote__author::before {
+        left: initial;
+        right: 0;
+    }
+
 .footer-post__share .font-icon {
     margin-right: initial;
     margin-left: 0.6875rem;
 }
+
 .comment-box__body {
     padding-left: initial;
     padding-right: 1rem;
 }
+
 .comment-box .comment-box {
     margin-left: initial;
     margin-right: 3rem;
 }
+
 .social-auth__item {
     margin-right: initial;
     margin-left: 0.375rem;
 }
+
 .social-auth__item {
     margin-right: initial;
     margin-left: 0.375rem;
 }
+
 .comment-form .btn-submit {
     right: initial;
     left: 0;
     margin-right: initial;
     margin-left: 0.75rem;
 }
+
 .comment-form .dropdown {
     margin-left: initial;
     margin-right: 0.75rem;
 }
+
 .comment-form .dropdown-menu::before {
     left: initial;
     right: 1rem;
 }
+
 .btn-back i {
     margin-right: initial;
     margin-left: 0.5rem;
 }
+
 .header-project .title {
     left: initial;
     right: 0;
     font-family: 'IRY';
 }
+
 .details-info--inline .details-info__item {
     margin-right: initial;
     margin-left: 5rem;
@@ -399,6 +401,38 @@ html, body {
     }
 }
 
+.social-animation {
+    transition: width 0.3s;
+    width: 100px;
+    height: 100px;
+    background-color: #2a2a2b;
+    transition-timing-function: ease;
+    display: grid;
+    z-index: 1;
+    border-radius:16px;
+}
+
+    .social-animation img {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 3;
+        max-width: 100px;
+        border-radius : 0 16px 16px 0;
+    }
+    .social-animation h4 {
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 2;
+        overflow: hidden;
+        align-self: center;
+        margin-bottom: 0;
+        padding-left : 25px;
+    }
+.social-animation:hover {
+    width: 350px;
+}
+
+
 
 
 
@@ -410,11 +444,13 @@ html, body {
         margin: 0 0 0 1rem;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     .social {
         text-align: right;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .timeline {
         padding-left: initial;
@@ -435,19 +471,21 @@ html, body {
         margin-left: 1.25rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .nav-container {
         border-radius: var(--radius-20) var(--radius-20) 0 0;
         left: initial;
         right: 0;
-
     }
 }
+
 @media only screen and (max-width: 580px) {
     .nav-container {
         border-radius: var(--radius-12) var(--radius-12) 0 0;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .timeline__item {
         padding-left: initial;
@@ -463,36 +501,41 @@ html, body {
         text-align: right;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .select .placeholder:after {
         right: initial;
         left: 0.125rem;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .select ul li {
         text-align: right;
-
     }
 }
+
 @media only screen and (min-width: 769px) {
     .filter__item {
         padding-right: initial;
         padding-left: 1.1875rem;
     }
 }
+
 @media only screen and (max-width: 991px) {
     .block-quote::before {
         left: initial;
         right: 0;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .block-quote__author {
         padding-left: initial;
         padding-right: 2rem;
     }
 }
+
 @media only screen and (max-width: 580px) {
     .comment-box .comment-box {
         margin-left: initial;

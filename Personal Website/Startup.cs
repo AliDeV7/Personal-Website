@@ -46,6 +46,7 @@ namespace Personal_Website
                         Configuration.GetConnectionString("DefaultConnection"),
                         b => b.MigrationsAssembly(typeof(PersonlWebsiteDbContext).Assembly.FullName)));
 
+            services.AddResponseCaching();
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
         }
@@ -73,7 +74,7 @@ namespace Personal_Website
                 }
             });
             app.UseCookiePolicy();
-
+            app.UseResponseCaching();
             /// Register Globalization
             app.UseRequestLocalization(app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value);
 
