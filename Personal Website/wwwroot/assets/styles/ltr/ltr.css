@@ -427,8 +427,10 @@ html, body {
         overflow: hidden;
         align-self: center;
         margin-bottom: 0;
-        padding-left: 25px;
-        font-family: 'sans-serif'
+        padding-right: 25px;
+        font-family: 'sans-serif';
+        direction: rtl;
+        text-align: right;
     }
 
     .social-animation:hover {

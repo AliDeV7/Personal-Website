@@ -430,7 +430,9 @@ html, body {
         align-self: center;
         margin-bottom: 0;
         padding-left: 25px;
-        font-family: 'sans-serif'
+        font-family: 'sans-serif';
+        text-align: left;
+        direction: ltr
     }
 
     .social-animation:hover  {
