@@ -1912,6 +1912,12 @@ button:focus {
     width: calc(33.333% - 20px);
 }
 
+@media only screen and (max-width: 767px) {
+    .gallery-grid__item {
+        text-align:center;
+    }
+}
+
     .gallery-grid__item:hover .gallery-grid__image {
         -webkit-transform: scale3d(1.05, 1.05, 1);
         transform: scale3d(1.05, 1.05, 1);
