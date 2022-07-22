@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Alobodo" xml:space="preserve">
+    <value>الوبدو</value>
+  </data>
+  <data name="AlobodoSubTitle" xml:space="preserve">
+    <value>سامانه جامع خدمات سیار</value>
+  </data>
+  <data name="Doris" xml:space="preserve">
+    <value>دُریس بانک</value>
+  </data>
+  <data name="DorisSubTitle" xml:space="preserve">
+    <value>سامانه یکپارچه خدمات مالی</value>
+  </data>
+  <data name="Elimedi" xml:space="preserve">
+    <value>ایلامیدی</value>
+  </data>
+  <data name="ElimediSubTitle" xml:space="preserve">
+    <value>الهه‌ی سلامت شما</value>
+  </data>
   <data name="EmailAddress" xml:space="preserve">
     <value>ahmadi.ali2219@gmail.com</value>
   </data>
@@ -128,5 +146,23 @@
   </data>
   <data name="heyBuddy" xml:space="preserve">
     <value>سلام رفیق!</value>
+  </data>
+  <data name="Mac" xml:space="preserve">
+    <value>مک</value>
+  </data>
+  <data name="MacSubTitle" xml:space="preserve">
+    <value>سامانه یکپارچه احراز هویت</value>
+  </data>
+  <data name="PhoneNumberFunctions" xml:space="preserve">
+    <value>توابع شماره تلفن</value>
+  </data>
+  <data name="PhoneNumberFunctionsSubTitle" xml:space="preserve">
+    <value>کتابخانه ای برای کنترل شماره تلفن</value>
+  </data>
+  <data name="Raya" xml:space="preserve">
+    <value>رایا</value>
+  </data>
+  <data name="RayaSubTitle" xml:space="preserve">
+    <value>ارائه‌دهنده‌ی خدمات طراحی و ساخت</value>
   </data>
 </root>

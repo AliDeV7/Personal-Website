@@ -61,6 +61,60 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alobodo.
+        /// </summary>
+        public static string Alobodo {
+            get {
+                return ResourceManager.GetString("Alobodo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A Universal platform for mobile services.
+        /// </summary>
+        public static string AlobodoSubTitle {
+            get {
+                return ResourceManager.GetString("AlobodoSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Doris Bank.
+        /// </summary>
+        public static string Doris {
+            get {
+                return ResourceManager.GetString("Doris", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Integrated system of financial services.
+        /// </summary>
+        public static string DorisSubTitle {
+            get {
+                return ResourceManager.GetString("DorisSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elimedi.
+        /// </summary>
+        public static string Elimedi {
+            get {
+                return ResourceManager.GetString("Elimedi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your health goddess.
+        /// </summary>
+        public static string ElimediSubTitle {
+            get {
+                return ResourceManager.GetString("ElimediSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ahmadi.ali2219@gmail.com.
         /// </summary>
         public static string EmailAddress {
@@ -93,6 +147,69 @@ namespace Resources {
         public static string heyBuddy {
             get {
                 return ResourceManager.GetString("heyBuddy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAC.
+        /// </summary>
+        public static string Mac {
+            get {
+                return ResourceManager.GetString("Mac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Integrated authentication system.
+        /// </summary>
+        public static string MacSubTitle {
+            get {
+                return ResourceManager.GetString("MacSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone nember functions.
+        /// </summary>
+        public static string PhoneNumberFunctions {
+            get {
+                return ResourceManager.GetString("PhoneNumberFunctions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A library for controlling phone numbers.
+        /// </summary>
+        public static string PhoneNumberFunctionsSubTitle {
+            get {
+                return ResourceManager.GetString("PhoneNumberFunctionsSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Raya.
+        /// </summary>
+        public static string Raya {
+            get {
+                return ResourceManager.GetString("Raya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Technology design and manufacturing service provider.
+        /// </summary>
+        public static string RayaSubTitle {
+            get {
+                return ResourceManager.GetString("RayaSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انتخاب دسته بندی.
+        /// </summary>
+        public static string SelectCategory {
+            get {
+                return ResourceManager.GetString("SelectCategory", resourceCulture);
             }
         }
     }

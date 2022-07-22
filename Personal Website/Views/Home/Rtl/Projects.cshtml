@@ -13,13 +13,13 @@
 
 <!-- Filter -->
 <div class="select">
-    <span class="placeholder">انتخاب دسته بندی</span>
+    <span class="placeholder">@Resources.Lable.SelectCategory</span>
     <ul class="filter">
         <li class="filter__item">Category</li>
-        <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">همه</a></li>
-        <li class="filter__item" data-filter=".category-design"><a class="filter__link" href="#filter">طراحی وب</a></li>
-        <li class="filter__item" data-filter=".category-applications"><a class="filter__link" href="#filter">نرم افزار</a></li>
-        <li class="filter__item" data-filter=".category-web-development"><a class="filter__link" href="#filter">توسعه وب</a></li>
+        <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">@Resources.Lable.All</a></li>
+        <li class="filter__item" data-filter=".category-web-development"><a class="filter__link" href="#filter">@Resources.Lable.Website</a></li>
+        <li class="filter__item" data-filter=".category-app"><a class="filter__link" href="#filter">@Resources.Lable.App</a></li>
+        <li class="filter__item" data-filter=".category-library"><a class="filter__link" href="#filter">@Resources.Lable.Library</a></li>
     </ul>
     <input type="hidden" name="changemetoo" />
 </div>
@@ -28,7 +28,7 @@
 <div class="gallery-grid js-masonry js-filter-container">
     <div class="gutter-sizer"></div>
     <!-- Item 1 -->
-    <div class="gallery-grid__item category-design">
+    <div class="gallery-grid__item category-web-development category-app">
        <a href="/GetProject?name=alobodo">
             <figure class="imghvr-shutter-in-out-diag-1" onmouseover="showelemet(this)">
                 <img src="~/assets/images/projects/Alobodo.1.fa.png" alt="" />
@@ -36,14 +36,14 @@
                 </div>
             </figure>
             <div class="gallery-grid__caption">
-                <h3 class="title gallery-grid__title">طراحی مونوبرد</h3>
-                <span class="gallery-grid__category">طراحی وب</span>
+                <h3 class="title gallery-grid__title">@Resources.Data.Alobodo</h3>
+                <span class="gallery-grid__category">@Resources.Data.AlobodoSubTitle</span>
             </div>
         </a>
     </div>
     
     <!-- Item 2 -->
-    <div class="gallery-grid__item category-applications">
+    <div class="gallery-grid__item category-web-development category-app">
         <a href="single-project.html">
             <figure class="imghvr-shutter-in-out-diag-1">
                 <img src="~/assets/images/projects/Doris.1.fa.png" alt="" />
@@ -54,14 +54,14 @@
                 </div>
             </figure>
             <div class="gallery-grid__caption">
-                <h3 class="title gallery-grid__title">نرم افزار گوریا</h3>
-                <span class="gallery-grid__category">نرم افزار</span>
+                <h3 class="title gallery-grid__title">@Resources.Data.Doris</h3>
+                <span class="gallery-grid__category">@Resources.Data.DorisSubTitle</span>
             </div>
         </a>
     </div>
 
     <!-- Item 3 -->
-    <div class="gallery-grid__item category-applications">
+    <div class="gallery-grid__item category-web-development category-app">
         <a href="single-project.html">
             <figure class="imghvr-shutter-in-out-diag-1">
                 <img src="~/assets/images/projects/Elimedi.1.fa.png" alt="" />
@@ -72,14 +72,14 @@
                 </div>
             </figure>
             <div class="gallery-grid__caption">
-                <h3 class="title gallery-grid__title">نرم افزار گوریا</h3>
-                <span class="gallery-grid__category">نرم افزار</span>
+                <h3 class="title gallery-grid__title">@Resources.Data.Elimedi</h3>
+                <span class="gallery-grid__category">@Resources.Data.ElimediSubTitle</span>
             </div>
         </a>
     </div>
 
     <!-- Item 4 -->
-    <div class="gallery-grid__item category-applications">
+    <div class="gallery-grid__item category-web-development">
         <a href="single-project.html">
             <figure class="imghvr-shutter-in-out-diag-1">
                 <img src="~/assets/images/projects/Mac.1.fa.png" alt="" />
@@ -90,14 +90,14 @@
                 </div>
             </figure>
             <div class="gallery-grid__caption">
-                <h3 class="title gallery-grid__title">نرم افزار گوریا</h3>
-                <span class="gallery-grid__category">نرم افزار</span>
+                <h3 class="title gallery-grid__title">@Resources.Data.Mac</h3>
+                <span class="gallery-grid__category">@Resources.Data.MacSubTitle</span>
             </div>
         </a>
     </div>
 
     <!-- Item 5 -->
-    <div class="gallery-grid__item category-applications">
+    <div class="gallery-grid__item category-web-development">
         <a href="single-project.html">
             <figure class="imghvr-shutter-in-out-diag-1">
                 <img src="~/assets/images/projects/Raya.1.fa.png" alt="" />
@@ -108,12 +108,29 @@
                 </div>
             </figure>
             <div class="gallery-grid__caption">
-                <h3 class="title gallery-grid__title">نرم افزار گوریا</h3>
-                <span class="gallery-grid__category">نرم افزار</span>
+                <h3 class="title gallery-grid__title">@Resources.Data.Raya</h3>
+                <span class="gallery-grid__category">@Resources.Data.RayaSubTitle</span>
             </div>
         </a>
     </div>
 
+        <!-- Item 6 -->
+    <div class="gallery-grid__item category-library">
+        <a href="single-project.html">
+            <figure class="imghvr-shutter-in-out-diag-1">
+                <img src="~/assets/images/projects/PhoneNumberMehtods.1.fa.png" alt="" />
+                <div class="container">
+                    <figcaption>
+                        <i class="fa-solid fa-circle-info" style="font-size:2.1rem"> <span style="font-family:IRY">@Resources.Lable.Show</span></i>
+                    </figcaption>
+                </div>
+            </figure>
+            <div class="gallery-grid__caption">
+                <h3 class="title gallery-grid__title">@Resources.Data.PhoneNumberFunctions</h3>
+                <span class="gallery-grid__category">@Resources.Data.PhoneNumberFunctionsSubTitle</span>
+            </div>
+        </a>
+    </div>
 @*    <!-- Item 7 -->
     <div class="gallery-grid__item category-web-development">
         <a href="single-project.html">

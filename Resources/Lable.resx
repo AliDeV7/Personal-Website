@@ -123,6 +123,12 @@
   <data name="Address" xml:space="preserve">
     <value>Shiraz, Iran</value>
   </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="App" xml:space="preserve">
+    <value>Application</value>
+  </data>
   <data name="Blog" xml:space="preserve">
     <value>Blog</value>
   </data>
@@ -137,6 +143,9 @@
   </data>
   <data name="Job" xml:space="preserve">
     <value>Programmer and Web developer</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>Location</value>
@@ -153,6 +162,9 @@
   <data name="Projects" xml:space="preserve">
     <value>Projects</value>
   </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
   <data name="SendEmail" xml:space="preserve">
     <value>Contant with Email</value>
   </data>
@@ -161,5 +173,8 @@
   </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>Show contact info</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
   </data>
 </root>

@@ -123,6 +123,12 @@
   <data name="Address" xml:space="preserve">
     <value>ایران ، شیراز</value>
   </data>
+  <data name="All" xml:space="preserve">
+    <value>همه</value>
+  </data>
+  <data name="App" xml:space="preserve">
+    <value>برنامه موبایل</value>
+  </data>
   <data name="Blog" xml:space="preserve">
     <value>وبلاگ</value>
   </data>
@@ -137,6 +143,9 @@
   </data>
   <data name="Job" xml:space="preserve">
     <value>برنامه نویس و توسعه دهند وب</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>کتابخانه</value>
   </data>
   <data name="Location" xml:space="preserve">
     <value>موقعیت مکانی</value>
@@ -161,5 +170,8 @@
   </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>نمایش اطلاعات تماس</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>وب سایت</value>
   </data>
 </root>

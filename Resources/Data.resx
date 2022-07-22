@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Alobodo" xml:space="preserve">
+    <value>Alobodo</value>
+  </data>
+  <data name="AlobodoSubTitle" xml:space="preserve">
+    <value>A Universal platform for mobile services</value>
+  </data>
+  <data name="Doris" xml:space="preserve">
+    <value>Doris Bank</value>
+  </data>
+  <data name="DorisSubTitle" xml:space="preserve">
+    <value>Integrated system of financial services</value>
+  </data>
+  <data name="Elimedi" xml:space="preserve">
+    <value>Elimedi</value>
+  </data>
+  <data name="ElimediSubTitle" xml:space="preserve">
+    <value>Your health goddess</value>
+  </data>
   <data name="EmailAddress" xml:space="preserve">
     <value>ahmadi.ali2219@gmail.com</value>
   </data>
@@ -128,5 +146,26 @@
   </data>
   <data name="heyBuddy" xml:space="preserve">
     <value>Hey Buddy</value>
+  </data>
+  <data name="Mac" xml:space="preserve">
+    <value>MAC</value>
+  </data>
+  <data name="MacSubTitle" xml:space="preserve">
+    <value>Integrated authentication system</value>
+  </data>
+  <data name="PhoneNumberFunctions" xml:space="preserve">
+    <value>Phone nember functions</value>
+  </data>
+  <data name="PhoneNumberFunctionsSubTitle" xml:space="preserve">
+    <value>A library for controlling phone numbers</value>
+  </data>
+  <data name="Raya" xml:space="preserve">
+    <value>Raya</value>
+  </data>
+  <data name="RayaSubTitle" xml:space="preserve">
+    <value>Technology design and manufacturing service provider</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>انتخاب دسته بندی</value>
   </data>
 </root>
