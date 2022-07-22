@@ -115,7 +115,7 @@ namespace Personal_Website.Controllers
             }
         }
 
-        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
+        //[ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Projects")]
         public IActionResult Projects()
         {
