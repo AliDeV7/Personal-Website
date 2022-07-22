@@ -11,7 +11,7 @@
                 <div class="badge">@Resources.Lable.Job</div>
             </div>
 
-            <button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>@Resources.Lable.ShowContatct</span><i class="feathericon-chevron-down"></i></button>
+            <button class="btn btn--small btn--icon-right sidebar__btn" onclick="togglemenu()"><span>@Resources.Lable.ShowContatct</span><i class="feathericon-chevron-down"></i></button>
         </div>
 
         <div class="sidebar__additional-info js-show">
@@ -54,3 +54,9 @@
         </div>
     </div>
 </aside>
+<script>
+    function togglemenu() {
+        $('.js-show').toggle('slow');
+        //e.preventDefault();
+    }
+</script>

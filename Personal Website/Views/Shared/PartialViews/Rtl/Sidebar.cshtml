@@ -11,7 +11,7 @@
                 <div class="badge">@Resources.Lable.Job</div>
             </div>
 
-            <button class="btn btn--small btn--icon-right sidebar__btn js-btn-toggle"><span>@Resources.Lable.ShowContatct</span><i class="feathericon-chevron-down"></i></button>
+            <button class="btn btn--small btn--icon-right sidebar__btn" onclick="togglemenu()"><span>@Resources.Lable.ShowContatct</span><i class="feathericon-chevron-down"></i></button>
         </div>
 
         <div class="sidebar__additional-info js-show">
@@ -22,7 +22,7 @@
                     <span class="box icon-box"><i class="font-icon icon-envelope"></i></span>
                     <div class="contacts-block__info">
                         <a href="mailto:ahmadi.ali2219@gmail.com" class="sidebar__text">@Resources.Lable.SendEmail</a>
-                  </div>
+                    </div>
                 </li>
                 <!-- Phone -->
                 <li class="details-info__item">
@@ -54,3 +54,10 @@
         </div>
     </div>
 </aside>
+
+<script>
+    function togglemenu() {
+        $('.js-show').toggle('slow');
+        //e.preventDefault();
+    }
+</script>
