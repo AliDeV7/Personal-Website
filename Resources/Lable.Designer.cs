@@ -115,6 +115,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to if you want to talk about work, you can fill this form :).
+        /// </summary>
+        public static string ContactForm {
+            get {
+                return ResourceManager.GetString("ContactForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact.
         /// </summary>
         public static string ContactMe {
@@ -124,11 +133,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Contact Me.
+        /// </summary>
+        public static string ContactMeLable {
+            get {
+                return ResourceManager.GetString("ContactMeLable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
         public static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email is not correct..
+        /// </summary>
+        public static string EmailError {
+            get {
+                return ResourceManager.GetString("EmailError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name and Family.
+        /// </summary>
+        public static string FullName {
+            get {
+                return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
         
@@ -160,6 +196,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Message ....
+        /// </summary>
+        public static string Message {
+            get {
+                return ResourceManager.GetString("Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please fill message..
+        /// </summary>
+        public static string MessageError {
+            get {
+                return ResourceManager.GetString("MessageError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Resume.
         /// </summary>
         public static string MyResume {
@@ -174,6 +228,15 @@ namespace Resources {
         public static string Name {
             get {
                 return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please fill your name and family..
+        /// </summary>
+        public static string NameError {
+            get {
+                return ResourceManager.GetString("NameError", resourceCulture);
             }
         }
         
@@ -210,6 +273,15 @@ namespace Resources {
         public static string SendEmail {
             get {
                 return ResourceManager.GetString("SendEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send Message.
+        /// </summary>
+        public static string SendMessage {
+            get {
+                return ResourceManager.GetString("SendMessage", resourceCulture);
             }
         }
         

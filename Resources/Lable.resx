@@ -135,11 +135,23 @@
   <data name="btnGoHome" xml:space="preserve">
     <value>Go Home</value>
   </data>
+  <data name="ContactForm" xml:space="preserve">
+    <value>if you want to talk about work, you can fill this form :)</value>
+  </data>
   <data name="ContactMe" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="ContactMeLable" xml:space="preserve">
+    <value>Contact Me</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
+  </data>
+  <data name="EmailError" xml:space="preserve">
+    <value>Email is not correct.</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Name and Family</value>
   </data>
   <data name="Job" xml:space="preserve">
     <value>Programmer and Web developer</value>
@@ -150,11 +162,20 @@
   <data name="Location" xml:space="preserve">
     <value>Location</value>
   </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message ...</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>Please fill message.</value>
+  </data>
   <data name="MyResume" xml:space="preserve">
     <value>Resume</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Ali Ahmadi</value>
+  </data>
+  <data name="NameError" xml:space="preserve">
+    <value>Please fill your name and family.</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone Number</value>
@@ -167,6 +188,9 @@
   </data>
   <data name="SendEmail" xml:space="preserve">
     <value>Contant with Email</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>Send Message</value>
   </data>
   <data name="Show" xml:space="preserve">
     <value>Show</value>

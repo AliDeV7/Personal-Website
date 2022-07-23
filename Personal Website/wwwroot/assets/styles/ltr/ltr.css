@@ -73,7 +73,7 @@
 
 /*typography*/
 body, .sidebar__user-name, .tooltip-inner, h3, h4, h5 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family:  sans-serif;
 }
 
 body {
@@ -90,11 +90,11 @@ h3, h5 {
 }
 
 h1, h2, h6, .review-item .title {
-    font-family: 'Space Grotesk';
+    font-family: sans-serif;
 }
 
 .news-item .title, .header-post .title {
-    font-family: 'Space Grotesk';
+    font-family: sans-serif;
     font-weight: 800;
 }
 
@@ -107,7 +107,7 @@ html, body {
 }
 
 :root {
-    --font-family: 'Space Grotesk', sans-serif;
+    --font-family: sans-serif;
     --font-base-size: 15px;
     --font-mobile-size: 14px;
     --color-heading: #FCFCFC;
@@ -428,7 +428,6 @@ html, body {
         align-self: center;
         margin-bottom: 0;
         padding-right: 25px;
-        font-family: 'sans-serif';
         direction: rtl;
         text-align: right;
     }

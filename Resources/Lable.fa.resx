@@ -135,11 +135,23 @@
   <data name="btnGoHome" xml:space="preserve">
     <value>بازگشت به خانه</value>
   </data>
+  <data name="ContactForm" xml:space="preserve">
+    <value>اگر دوستدارید در مورد کار بیشتر صحبت کنیم، فرم را پر کنید :)</value>
+  </data>
   <data name="ContactMe" xml:space="preserve">
+    <value>تماس با من</value>
+  </data>
+  <data name="ContactMeLable" xml:space="preserve">
     <value>تماس با من</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>ایمیل</value>
+  </data>
+  <data name="EmailError" xml:space="preserve">
+    <value>ایمیل نادرست است.</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>نام و نام خانوادگی</value>
   </data>
   <data name="Job" xml:space="preserve">
     <value>برنامه نویس و توسعه دهند وب</value>
@@ -150,11 +162,20 @@
   <data name="Location" xml:space="preserve">
     <value>موقعیت مکانی</value>
   </data>
+  <data name="Message" xml:space="preserve">
+    <value>پیام ...</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>پیام خود را وارد کنید.</value>
+  </data>
   <data name="MyResume" xml:space="preserve">
     <value>رزومه</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>علی احمدی</value>
+  </data>
+  <data name="NameError" xml:space="preserve">
+    <value>لطفا نام و نام خانوادگی خود را وارد کنید.</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>شماره تلفن</value>
@@ -164,6 +185,9 @@
   </data>
   <data name="SendEmail" xml:space="preserve">
     <value>ارتباط با ایمیل</value>
+  </data>
+  <data name="SendMessage" xml:space="preserve">
+    <value>ارسال پیام</value>
   </data>
   <data name="Show" xml:space="preserve">
     <value>نمایش</value>

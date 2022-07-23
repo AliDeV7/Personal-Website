@@ -3,45 +3,45 @@
 }
 <!-- About -->
 <div class="pb-0 pb-sm-2">
-    <h1 class="title title--h1 title__separate">تماس با من</h1>
+    <h1 class="title title--h1 title__separate">@Resources.Lable.ContactMeLable</h1>
 </div>
 
 <!-- Contact  Just 5 Social is OK-->
 <div class="container" style="margin-bottom:2.3rem;">
     <div class="row justify-content-md-center">
         <!--Social Media -->
-        <div class="social-animation" onmouseover="mousetopointer(this)">
-            <img src="~/assets/images/social/Linkedin.png" />
-            <h4 >alasdsadasds</h4>
-        </div>
-
-        <!--Social Media -->
-        <div class="social-animation" onmouseover="mousetopointer(this)">
-            <img src="~/assets/images/social/Github.png" />
-            <h4 >alasdsadasds</h4>
-        </div>
-
-        <!--Social Media -->
         <div class="social-animation" onmouseover="mousetopointer(this)" onclick="opensocial('linkedin')">
+            <img src="~/assets/images/social/Linkedin.png" />
+            <h4 >Alidev7</h4>
+        </div>
+
+        <!--Social Media -->
+        <div class="social-animation" onmouseover="mousetopointer(this)" onclick="opensocial('github')">
+            <img src="~/assets/images/social/Github.png" />
+            <h4 >AliDeV7</h4>
+        </div>
+
+        <!--Social Media -->
+        <div class="social-animation" onmouseover="mousetopointer(this)" onclick="opensocial('telegram')">
             <img src="~/assets/images/social/Telegram.png" />
-            <h4 >alasdsadasds</h4>
+            <h4 >AliDev77</h4>
         </div>
 
         <!--Social Media -->
-        <div class="social-animation" onmouseover="mousetopointer(this)">
+        <div class="social-animation" onmouseover="mousetopointer(this)" onclick="opensocial('stackoverflow')">
             <img src="~/assets/images/social/Stackoverflow.png" />
-            <h4 >alasdsadasds</h4>
+            <h4 >Ali.Ahmadi</h4>
         </div>
 
         <!--Social Media -->
-        <div class="social-animation" onmouseover="mousetopointer(this)">
+        <div class="social-animation" onmouseover="mousetopointer(this)" onclick="opensocial('gmail')">
             <img src="~/assets/images/social/Gmail.png" />
-            <h4 >alasdsadasds</h4>
+            <h4 style="font-size:1rem">Ahmadi.ali2219@gmail.com</h4>
         </div>
     </div>
 </div>
-<h2 class="title title--h2">فرم تماس با من</h2>
 
+<h2 class="title title--h2" style="margin-top:30px;font-size:1.3rem">@Resources.Lable.ContactForm</h2>
 <script>
     function mousetopointer(element){
         element.style.cssText +='cursor:pointer';
@@ -50,10 +50,19 @@
     function opensocial(socialName){
     switch(socialName) {
     case 'linkedin':
-            window.open('http://www.google.com', '_blank');
+            window.open('https://www.linkedin.com/in/alidev7/', '_blank');
     break;
-    case 'instagram':
-    // code block
+    case 'gmail':
+            window.open('mailto:ahmadi.ali2219@gmail.com', '_blank');
+    break;
+        case 'github':
+            window.open('https://github.com/AliDeV7', '_blank');
+    break;
+        case 'stackoverflow':
+            window.open('https://stackoverflow.com/users/10786639/ali-ahmadi', '_blank');
+    break;
+        case 'telegram':
+            window.open('https://t.me/AliDev77', '_blank');
     break;
     default:
     // code block
@@ -65,15 +74,15 @@
 <form data-toggle="validator" asp-action="sendTicket" asp-controller="home" method="post" enctype="multipart/form-data">
     <div class="row">
         <div class="form-group col-12 col-md-6">
-            <input type="text" asp-for="Name" class="input form-control" id="nameContact" name="nameContact" placeholder="نام و نام خانوادگی" required="required" autocomplete="on" oninvalid="setCustomValidity('لطفا نام و نام خانوادگی خود را وارد کنید.')" onkeyup="setCustomValidity('')">
+            <input type="text" asp-for="Name" class="input form-control" id="nameContact" name="nameContact" placeholder="@Resources.Lable.FullName" required="required" autocomplete="on" oninvalid="setCustomValidity('لطفا نام و نام خانوادگی خود را وارد کنید.')" onkeyup="setCustomValidity('')">
             <div class="help-block with-errors"></div>
         </div>
         <div class="form-group col-12 col-md-6">
-            <input type="email" asp-for="Email" class="input form-control" id="emailContact" name="emailContact" placeholder="ایمیل" required="required" autocomplete="on" oninvalid="setCustomValidity('ایمیل نادرست است.')" onkeyup="setCustomValidity('')">
+            <input type="email" asp-for="Email" class="input form-control" id="emailContact" name="emailContact" placeholder="@Resources.Lable.Email" required="required" autocomplete="on" oninvalid="setCustomValidity('')" onkeyup="setCustomValidity('')">
             <div class="help-block with-errors"></div>
         </div>
         <div class="form-group col-12 col-md-12">
-            <textarea asp-for="message" class="textarea form-control" id="messageContact" name="messageContact" placeholder="پیام..." rows="4" required="required" oninvalid="setCustomValidity('لطفا پیام خود را وارد کنید.')" onkeyup="setCustomValidity('')"></textarea>
+            <textarea asp-for="message" class="textarea form-control" id="messageContact" name="messageContact" placeholder="@Resources.Lable.Message" rows="4" required="required" oninvalid="setCustomValidity('پیام خود را وارد کنید.')" onkeyup="setCustomValidity('')"></textarea>
             <div class="help-block with-errors"></div>
         </div>
     </div>
@@ -82,7 +91,7 @@
             <div id="validator-contact" class="hidden"></div>
         </div>
         <div class="col-12 col-md-6 order-1 order-md-2 text-end">
-            <button type="submit" class="btn"><i class="font-icon icon-send"></i> ارسال پیام</button>
+            <button type="submit" class="btn"><i class="font-icon icon-send"></i> @Resources.Lable.SendMessage</button>
         </div>
     </div>
 </form>
