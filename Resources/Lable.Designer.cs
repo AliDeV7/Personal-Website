@@ -115,7 +115,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to if you want to talk about work, you can fill this form :).
+        ///   Looks up a localized string similar to if you want to talk about work, Send a message :).
         /// </summary>
         public static string ContactForm {
             get {

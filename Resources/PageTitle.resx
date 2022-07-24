@@ -120,4 +120,7 @@
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="Index" xml:space="preserve">
+    <value>AliDEv7 | Backend Developor</value>
+  </data>
 </root>
