@@ -9,22 +9,24 @@
         <li class="nav__item"><a id="resumemenu" onclick="pageNavigate('resume')">@Resources.Lable.MyResume</a></li>
         <li class="nav__item"><a id="projectsmenu" onclick="pageNavigate('projects')">@Resources.Lable.Projects</a></li>
         <li class="nav__item"><a id="contactmenu" onclick="pageNavigate('contact')">@Resources.Lable.ContactMe</a></li>
-        <li class="nav__item" style="margin-left:3rem;font-family:IRY"><a id="languageTag" asp-action="changeLanguage" asp-controller="Home" asp-route-culture="fa" asp-route-returnUrl="@returnURL">فارسی</a></li>
+        <li class="nav__item" id="languageTagParent" style="margin-left:3rem;font-family:IRY"><a id="languageTag" asp-action="changeLanguage" asp-controller="Home" asp-route-culture="fa" asp-route-returnUrl="@returnURL">فارسی</a></li>
     </ul>
 </div>
 
 <script src="~/assets/js/menu.js"></script>
 <script>
     function myFunction(x) {
-  if (x.matches) { // If media query matches
-      document.getElementById('languageTag').innerHTML= 'فا';
-      // delete right paddding of element
-  } else {
-      document.getElementById('languageTag').innerHTML= 'فارسی';
-  }
-}
+        if (x.matches) { // If media query matches
+            document.getElementById('languageTag').innerHTML = 'فا';
 
-var x = window.matchMedia("(max-width: 450px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+        } else {
+            document.getElementById('languageTag').innerHTML = 'فارسی';
+
+
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 450px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
 </script>

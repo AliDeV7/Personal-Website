@@ -169,7 +169,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Programmer and Web developer.
+        ///   Looks up a localized string similar to Back-End Developer.
         /// </summary>
         public static string Job {
             get {

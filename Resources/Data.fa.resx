@@ -165,4 +165,7 @@
   <data name="RayaSubTitle" xml:space="preserve">
     <value>ارائه‌دهنده‌ی خدمات طراحی و ساخت</value>
   </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>انتخاب دسته بندی</value>
+  </data>
 </root>
