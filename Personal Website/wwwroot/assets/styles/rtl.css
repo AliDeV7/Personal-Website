@@ -247,6 +247,8 @@ html, body {
     margin-left: 2.75rem;
 }
 
+
+
 .news-item__date span {
     padding-right: initial;
     padding-left: 1.125rem;
@@ -455,6 +457,7 @@ html, body {
     }
 }
 
+
 /* END My CSS */
 
 @media only screen and (max-width: 580px) {
@@ -487,6 +490,7 @@ html, body {
     .nav__item {
         margin-right: initial;
         margin-left: 1.25rem;
+        
     }
 }
 

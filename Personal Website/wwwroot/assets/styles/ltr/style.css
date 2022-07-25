@@ -1492,6 +1492,12 @@ button:focus {
     }
 }
 
+@media only screen and (max-width: 390px) {
+    .nav {
+        font-size: 0.6875rem;
+    }
+}
+
 .nav__item {
     margin-left: 2.75rem;
 }
