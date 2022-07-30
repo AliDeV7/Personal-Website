@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null;
+    //RTL
 }
 <!-- About -->
 <div class="pb-3">
@@ -55,32 +56,166 @@
     </article>
 </div>
 
-<!-- Skills -->
-<h2 class="title title--h2 mt-3">مهارت های طراحی</h2>
-<div class="box box-inner mb-0">
-    <!-- Web Design -->
-    <div class="progress">
-        <div class="progress-text"><span>طراحی وب</span> 80%</div>
-        <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span></div>
+<!-- Programming Skills -->
+<h2 class="title title--h2 mt-3">@Resources.Lable.Programming </h2>
+<div class="box box-inner mb-5">
+    <div class="row">
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Csharp</span> 80%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress  col-6">
+            <div class="progress-text"><span>@Resources.Data.Aspnetcore</span> 90% </div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress  col-6">
+            <div class="progress-text"><span>@Resources.Data.SQL</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6 ">
+            <div class="progress-text"><span>@Resources.Data.Webapi</span> 95%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress  col-6">
+            <div class="progress-text"><span>@Resources.Data.Identityserver4</span> 80%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress  col-6">
+            <div class="progress-text"><span>@Resources.Data.Javascript</span> 60%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Html</span> 95%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Css</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Selenium</span> 75%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Swagger</span> 100%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.UnitTest</span> 60%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Git</span> 80%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+    </div>
+</div>
+
+<!-- English Language -->
+<h2 class="title title--h2 mt-3">@Resources.Lable.EnglishLang </h2>
+<div class="box box-inner mb-5">
+    <div class="row">
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.EnListening</span> 85% </div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.EnReading</span> 90%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.EnWriting</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.EnSpeaking</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+    </div>
+</div>
+
+<!-- Others -->
+<h2 class="title title--h2 mt-4">@Resources.Lable.Others </h2>
+<div class="box box-inner mb-5">
+    <div class="row">
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.C</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Xamarin</span> 65%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Mongo</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Bootsrap</span> 65%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.PostMan</span> 100%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.DLMS</span> 50%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Redis</span> 65%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Docker</span> 40%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Sqlite</span> 80%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.AVR</span> 70%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.Angular</span> 40%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
+
+        <div class="progress col-6">
+            <div class="progress-text"><span>@Resources.Data.React</span> 30%</div>
+            <div class="progress-bar"><span role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></span></div>
+        </div>
     </div>
 
-    <!-- Web Design -->
-    <div class="progress">
-        <div class="progress-text"><span>طراحی گرافیک</span> 75%</div>
-        <div class="progress-bar"><span role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span></div>
-    </div>
 
-    <!-- Web Design -->
-    <div class="progress">
-        <div class="progress-text"><span>برندسازی</span> 90%</div>
-        <div class="progress-bar"><span role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span></div>
-    </div>
-
-    <!-- Web Design -->
-    <div class="progress">
-        <div class="progress-text"><span>وردپرس</span> 50%</div>
-        <div class="progress-bar"><span role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></span></div>
-    </div>
 </div>
 <!-- JavaScripts -->
 <script src="~/assets/js/common.js"></script>

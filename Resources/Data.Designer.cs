@@ -79,6 +79,96 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Angular.
+        /// </summary>
+        public static string Angular {
+            get {
+                return ResourceManager.GetString("Angular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asp.Net .
+        /// </summary>
+        public static string Aspnetcore {
+            get {
+                return ResourceManager.GetString("Aspnetcore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AVR.
+        /// </summary>
+        public static string AVR {
+            get {
+                return ResourceManager.GetString("AVR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bootstrap.
+        /// </summary>
+        public static string Bootsrap {
+            get {
+                return ResourceManager.GetString("Bootsrap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C.
+        /// </summary>
+        public static string C {
+            get {
+                return ResourceManager.GetString("C", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C++.
+        /// </summary>
+        public static string CPlus {
+            get {
+                return ResourceManager.GetString("CPlus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C-Sharp.
+        /// </summary>
+        public static string Csharp {
+            get {
+                return ResourceManager.GetString("Csharp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSS.
+        /// </summary>
+        public static string Css {
+            get {
+                return ResourceManager.GetString("Css", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DLMS.
+        /// </summary>
+        public static string DLMS {
+            get {
+                return ResourceManager.GetString("DLMS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Docker.
+        /// </summary>
+        public static string Docker {
+            get {
+                return ResourceManager.GetString("Docker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Doris Bank.
         /// </summary>
         public static string Doris {
@@ -124,6 +214,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Listening.
+        /// </summary>
+        public static string EnListening {
+            get {
+                return ResourceManager.GetString("EnListening", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reading.
+        /// </summary>
+        public static string EnReading {
+            get {
+                return ResourceManager.GetString("EnReading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speaking.
+        /// </summary>
+        public static string EnSpeaking {
+            get {
+                return ResourceManager.GetString("EnSpeaking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Writing.
+        /// </summary>
+        public static string EnWriting {
+            get {
+                return ResourceManager.GetString("EnWriting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error 404.
         /// </summary>
         public static string error404 {
@@ -142,11 +268,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Github.
+        /// </summary>
+        public static string Git {
+            get {
+                return ResourceManager.GetString("Git", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hey Buddy.
         /// </summary>
         public static string heyBuddy {
             get {
                 return ResourceManager.GetString("heyBuddy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HTML.
+        /// </summary>
+        public static string Html {
+            get {
+                return ResourceManager.GetString("Html", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Identity Server 4.
+        /// </summary>
+        public static string Identityserver4 {
+            get {
+                return ResourceManager.GetString("Identityserver4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to JavaScript.
+        /// </summary>
+        public static string Javascript {
+            get {
+                return ResourceManager.GetString("Javascript", resourceCulture);
             }
         }
         
@@ -169,6 +331,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MongoDB.
+        /// </summary>
+        public static string Mongo {
+            get {
+                return ResourceManager.GetString("Mongo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone nember functions.
         /// </summary>
         public static string PhoneNumberFunctions {
@@ -183,6 +354,15 @@ namespace Resources {
         public static string PhoneNumberFunctionsSubTitle {
             get {
                 return ResourceManager.GetString("PhoneNumberFunctionsSubTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PostMan.
+        /// </summary>
+        public static string PostMan {
+            get {
+                return ResourceManager.GetString("PostMan", resourceCulture);
             }
         }
         
@@ -205,11 +385,92 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to React.
+        /// </summary>
+        public static string React {
+            get {
+                return ResourceManager.GetString("React", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Redis.
+        /// </summary>
+        public static string Redis {
+            get {
+                return ResourceManager.GetString("Redis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Category.
         /// </summary>
         public static string SelectCategory {
             get {
                 return ResourceManager.GetString("SelectCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selenium.
+        /// </summary>
+        public static string Selenium {
+            get {
+                return ResourceManager.GetString("Selenium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSQL Server.
+        /// </summary>
+        public static string SQL {
+            get {
+                return ResourceManager.GetString("SQL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SQlite.
+        /// </summary>
+        public static string Sqlite {
+            get {
+                return ResourceManager.GetString("Sqlite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Swagger.
+        /// </summary>
+        public static string Swagger {
+            get {
+                return ResourceManager.GetString("Swagger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit Test.
+        /// </summary>
+        public static string UnitTest {
+            get {
+                return ResourceManager.GetString("UnitTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web Api.
+        /// </summary>
+        public static string Webapi {
+            get {
+                return ResourceManager.GetString("Webapi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xamarin.
+        /// </summary>
+        public static string Xamarin {
+            get {
+                return ResourceManager.GetString("Xamarin", resourceCulture);
             }
         }
     }

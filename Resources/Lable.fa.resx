@@ -177,8 +177,14 @@
   <data name="NameError" xml:space="preserve">
     <value>لطفا نام و نام خانوادگی خود را وارد کنید.</value>
   </data>
+  <data name="Others" xml:space="preserve">
+    <value>همچنین آشنا با</value>
+  </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>شماره تلفن</value>
+  </data>
+  <data name="Programming" xml:space="preserve">
+    <value>برنامه نویسی</value>
   </data>
   <data name="Projects" xml:space="preserve">
     <value>نمونه کارها</value>
@@ -194,6 +200,9 @@
   </data>
   <data name="ShowContatct" xml:space="preserve">
     <value>نمایش اطلاعات تماس</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>مهارت ها</value>
   </data>
   <data name="Website" xml:space="preserve">
     <value>وب سایت</value>

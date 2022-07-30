@@ -160,6 +160,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to English Language.
+        /// </summary>
+        public static string EnglishLang {
+            get {
+                return ResourceManager.GetString("EnglishLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Name and Family.
         /// </summary>
         public static string FullName {
@@ -241,11 +250,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Also Familiar.
+        /// </summary>
+        public static string Others {
+            get {
+                return ResourceManager.GetString("Others", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone Number.
         /// </summary>
         public static string PhoneNumber {
             get {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Programming.
+        /// </summary>
+        public static string Programming {
+            get {
+                return ResourceManager.GetString("Programming", resourceCulture);
             }
         }
         
@@ -300,6 +327,15 @@ namespace Resources {
         public static string ShowContatct {
             get {
                 return ResourceManager.GetString("ShowContatct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Skills.
+        /// </summary>
+        public static string Skills {
+            get {
+                return ResourceManager.GetString("Skills", resourceCulture);
             }
         }
         

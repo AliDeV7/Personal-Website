@@ -123,6 +123,36 @@
   <data name="AlobodoSubTitle" xml:space="preserve">
     <value>سامانه جامع خدمات سیار</value>
   </data>
+  <data name="Angular" xml:space="preserve">
+    <value>Angular</value>
+  </data>
+  <data name="Aspnetcore" xml:space="preserve">
+    <value>Asp.Net Core</value>
+  </data>
+  <data name="AVR" xml:space="preserve">
+    <value>AVR</value>
+  </data>
+  <data name="Bootsrap" xml:space="preserve">
+    <value>Bootstrap</value>
+  </data>
+  <data name="C" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="CPlus" xml:space="preserve">
+    <value>C++</value>
+  </data>
+  <data name="Csharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="Css" xml:space="preserve">
+    <value>CSS</value>
+  </data>
+  <data name="DLMS" xml:space="preserve">
+    <value>DLMS</value>
+  </data>
+  <data name="Docker" xml:space="preserve">
+    <value>Docker</value>
+  </data>
   <data name="Doris" xml:space="preserve">
     <value>دُریس بانک</value>
   </data>
@@ -138,14 +168,38 @@
   <data name="EmailAddress" xml:space="preserve">
     <value>ahmadi.ali2219@gmail.com</value>
   </data>
+  <data name="EnListening" xml:space="preserve">
+    <value>Listening</value>
+  </data>
+  <data name="EnReading" xml:space="preserve">
+    <value>Reading</value>
+  </data>
+  <data name="EnSpeaking" xml:space="preserve">
+    <value>Speaking</value>
+  </data>
+  <data name="EnWriting" xml:space="preserve">
+    <value>Writing</value>
+  </data>
   <data name="error404" xml:space="preserve">
     <value>خطای 404</value>
   </data>
   <data name="error404text" xml:space="preserve">
     <value>صفحه ای که دنبالش هستی رو &lt;br&gt; نمیتونم پیدا کنم برات :(</value>
   </data>
+  <data name="Git" xml:space="preserve">
+    <value>Github</value>
+  </data>
   <data name="heyBuddy" xml:space="preserve">
     <value>سلام رفیق!</value>
+  </data>
+  <data name="Html" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Identityserver4" xml:space="preserve">
+    <value>Identity Server 4</value>
+  </data>
+  <data name="Javascript" xml:space="preserve">
+    <value>JavaScript</value>
   </data>
   <data name="Mac" xml:space="preserve">
     <value>مک</value>
@@ -153,11 +207,17 @@
   <data name="MacSubTitle" xml:space="preserve">
     <value>سامانه یکپارچه احراز هویت</value>
   </data>
+  <data name="Mongo" xml:space="preserve">
+    <value>MongoDB</value>
+  </data>
   <data name="PhoneNumberFunctions" xml:space="preserve">
     <value>توابع شماره تلفن</value>
   </data>
   <data name="PhoneNumberFunctionsSubTitle" xml:space="preserve">
     <value>کتابخانه ای برای کنترل شماره تلفن</value>
+  </data>
+  <data name="PostMan" xml:space="preserve">
+    <value>Postman</value>
   </data>
   <data name="Raya" xml:space="preserve">
     <value>رایا</value>
@@ -165,7 +225,34 @@
   <data name="RayaSubTitle" xml:space="preserve">
     <value>ارائه‌دهنده‌ی خدمات طراحی و ساخت</value>
   </data>
+  <data name="React" xml:space="preserve">
+    <value>React</value>
+  </data>
+  <data name="Redis" xml:space="preserve">
+    <value>Redis</value>
+  </data>
   <data name="SelectCategory" xml:space="preserve">
     <value>انتخاب دسته بندی</value>
+  </data>
+  <data name="Selenium" xml:space="preserve">
+    <value>Selenium</value>
+  </data>
+  <data name="SQL" xml:space="preserve">
+    <value>MSQL Server</value>
+  </data>
+  <data name="Sqlite" xml:space="preserve">
+    <value>SQlite</value>
+  </data>
+  <data name="Swagger" xml:space="preserve">
+    <value>Swagger</value>
+  </data>
+  <data name="UnitTest" xml:space="preserve">
+    <value>Unit Test</value>
+  </data>
+  <data name="Webapi" xml:space="preserve">
+    <value>Web Api</value>
+  </data>
+  <data name="Xamarin" xml:space="preserve">
+    <value>Xamarin</value>
   </data>
 </root>
