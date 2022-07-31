@@ -144,6 +144,9 @@
   <data name="ContactMeLable" xml:space="preserve">
     <value>Contact Me</value>
   </data>
+  <data name="Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
@@ -152,6 +155,9 @@
   </data>
   <data name="EnglishLang" xml:space="preserve">
     <value>English Language</value>
+  </data>
+  <data name="Experiences" xml:space="preserve">
+    <value>Experiences</value>
   </data>
   <data name="FullName" xml:space="preserve">
     <value>Name and Family</value>
