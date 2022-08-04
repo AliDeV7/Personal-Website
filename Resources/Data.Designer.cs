@@ -421,6 +421,69 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to South Industrial Management Institute.
+        /// </summary>
+        public static string SIMI {
+            get {
+                return ResourceManager.GetString("SIMI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leaned C# Language.
+        /// </summary>
+        public static string SIMI_Des {
+            get {
+                return ResourceManager.GetString("SIMI_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learned Asp.Net Core Framework and SQL Server.
+        /// </summary>
+        public static string SIMI_Des1 {
+            get {
+                return ResourceManager.GetString("SIMI_Des1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Learned Xamarin Framework.
+        /// </summary>
+        public static string SIMI_Des2 {
+            get {
+                return ResourceManager.GetString("SIMI_Des2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2018-2018.
+        /// </summary>
+        public static string SIMI_Year {
+            get {
+                return ResourceManager.GetString("SIMI_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2018-2019.
+        /// </summary>
+        public static string SIMI_Year1 {
+            get {
+                return ResourceManager.GetString("SIMI_Year1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2019-2019.
+        /// </summary>
+        public static string SIMI_Year2 {
+            get {
+                return ResourceManager.GetString("SIMI_Year2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MSQL Server.
         /// </summary>
         public static string SQL {
@@ -453,6 +516,33 @@ namespace Resources {
         public static string UnitTest {
             get {
                 return ResourceManager.GetString("UnitTest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hamedan University of Technology.
+        /// </summary>
+        public static string University {
+            get {
+                return ResourceManager.GetString("University", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bachelor of Science in Electrical Engineering-Control.
+        /// </summary>
+        public static string University_Des {
+            get {
+                return ResourceManager.GetString("University_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2011-2015.
+        /// </summary>
+        public static string University_Year {
+            get {
+                return ResourceManager.GetString("University_Year", resourceCulture);
             }
         }
         

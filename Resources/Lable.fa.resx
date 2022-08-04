@@ -153,6 +153,9 @@
   <data name="EmailError" xml:space="preserve">
     <value>ایمیل نادرست است.</value>
   </data>
+  <data name="EnglishLang" xml:space="preserve">
+    <value>زبان انگلیسی</value>
+  </data>
   <data name="Experiences" xml:space="preserve">
     <value>تجربیات</value>
   </data>
@@ -184,7 +187,7 @@
     <value>لطفا نام و نام خانوادگی خود را وارد کنید.</value>
   </data>
   <data name="Others" xml:space="preserve">
-    <value>همچنین آشنا با</value>
+    <value>آشنا با</value>
   </data>
   <data name="PhoneNumber" xml:space="preserve">
     <value>شماره تلفن</value>

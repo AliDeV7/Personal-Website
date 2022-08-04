@@ -237,6 +237,27 @@
   <data name="Selenium" xml:space="preserve">
     <value>Selenium</value>
   </data>
+  <data name="SIMI" xml:space="preserve">
+    <value>سازمان مدیریت صنعتی فارس</value>
+  </data>
+  <data name="SIMI_Des" xml:space="preserve">
+    <value>یادگیری زبان برنامه نویسی C#</value>
+  </data>
+  <data name="SIMI_Des1" xml:space="preserve">
+    <value>یادگیری فریم ورک Asp.Net و SQL Server به همراه مدرک بین المللی</value>
+  </data>
+  <data name="SIMI_Des2" xml:space="preserve">
+    <value>آموزش فریم ورک Xamarin به همراه مدرک بین المللی</value>
+  </data>
+  <data name="SIMI_Year" xml:space="preserve">
+    <value>1397-1397</value>
+  </data>
+  <data name="SIMI_Year1" xml:space="preserve">
+    <value>1397-1398</value>
+  </data>
+  <data name="SIMI_Year2" xml:space="preserve">
+    <value>2019-2019</value>
+  </data>
   <data name="SQL" xml:space="preserve">
     <value>MSQL Server</value>
   </data>
@@ -248,6 +269,15 @@
   </data>
   <data name="UnitTest" xml:space="preserve">
     <value>Unit Test</value>
+  </data>
+  <data name="University" xml:space="preserve">
+    <value>دانشگاه صنعتی همدان</value>
+  </data>
+  <data name="University_Des" xml:space="preserve">
+    <value>لیسانس برق گرایش کنترل</value>
+  </data>
+  <data name="University_Year" xml:space="preserve">
+    <value>1390-1394</value>
   </data>
   <data name="Webapi" xml:space="preserve">
     <value>Web Api</value>
