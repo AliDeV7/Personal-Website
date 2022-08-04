@@ -186,6 +186,16 @@
   <data name="error404text" xml:space="preserve">
     <value>We can't seem to find the page &lt;br&gt; you are looking for :(</value>
   </data>
+  <data name="Freelancer" xml:space="preserve">
+    <value>Freelancer</value>
+  </data>
+  <data name="Freelancer_Des" xml:space="preserve">
+    <value>Start my career as a freelancer with two project, Knight Shop Website and Game Club Application</value>
+    <comment>شروع به کار برنامه نویسی با دو پروژه فریلنسری ، فروشگاه نایت شاپ و اپلیکیشن موبایل گیم کلاب</comment>
+  </data>
+  <data name="Freelancer_Year" xml:space="preserve">
+    <value>2019 -2019</value>
+  </data>
   <data name="Git" xml:space="preserve">
     <value>Github</value>
   </data>
@@ -200,6 +210,16 @@
   </data>
   <data name="Javascript" xml:space="preserve">
     <value>JavaScript</value>
+  </data>
+  <data name="Junior" xml:space="preserve">
+    <value>Junior Web Developer</value>
+  </data>
+  <data name="Junior_Des" xml:space="preserve">
+    <value>I join "Medis Holding" as Junior backend developer and we rewrite Alobodo project </value>
+    <comment>به عنوان برنامه نویس سمت سرور در هلدینگ مدیس شروع به کار کردم و پروژه "الوبدو" باز نویسی کردیم</comment>
+  </data>
+  <data name="Junior_Year" xml:space="preserve">
+    <value>2020 - 2021</value>
   </data>
   <data name="Mac" xml:space="preserve">
     <value>MAC</value>
@@ -236,6 +256,16 @@
   </data>
   <data name="Selenium" xml:space="preserve">
     <value>Selenium</value>
+  </data>
+  <data name="Senior" xml:space="preserve">
+    <value>Senior Web Developer</value>
+  </data>
+  <data name="Senior_Des" xml:space="preserve">
+    <value>I continue my work as a senior web developer by continuing to work in Medis Holding and doing many projects in different fields.</value>
+    <comment>با ادامه فعالیت در هلدینگ مدیس و انجام پروژه های متعدد در ضمینه های مختلف، به عنوان برنامه نویس ارشد کارم را ادامه میدهم</comment>
+  </data>
+  <data name="Senior_Year" xml:space="preserve">
+    <value>2022 - Now</value>
   </data>
   <data name="SIMI" xml:space="preserve">
     <value>South Industrial Management Institute</value>

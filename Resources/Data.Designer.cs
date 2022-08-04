@@ -268,6 +268,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Freelancer.
+        /// </summary>
+        public static string Freelancer {
+            get {
+                return ResourceManager.GetString("Freelancer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start my career as a freelancer with two project, Knight Shop Website and Game Club Application.
+        /// </summary>
+        public static string Freelancer_Des {
+            get {
+                return ResourceManager.GetString("Freelancer_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2019 -2019.
+        /// </summary>
+        public static string Freelancer_Year {
+            get {
+                return ResourceManager.GetString("Freelancer_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Github.
         /// </summary>
         public static string Git {
@@ -309,6 +336,33 @@ namespace Resources {
         public static string Javascript {
             get {
                 return ResourceManager.GetString("Javascript", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Junior Web Developer.
+        /// </summary>
+        public static string Junior {
+            get {
+                return ResourceManager.GetString("Junior", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I join &quot;Medis Holding&quot; as Junior backend developer and we rewrite Alobodo project .
+        /// </summary>
+        public static string Junior_Des {
+            get {
+                return ResourceManager.GetString("Junior_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2020 - 2021.
+        /// </summary>
+        public static string Junior_Year {
+            get {
+                return ResourceManager.GetString("Junior_Year", resourceCulture);
             }
         }
         
@@ -417,6 +471,33 @@ namespace Resources {
         public static string Selenium {
             get {
                 return ResourceManager.GetString("Selenium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Senior Web Developer.
+        /// </summary>
+        public static string Senior {
+            get {
+                return ResourceManager.GetString("Senior", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I continue my work as a senior web developer by continuing to work in Medis Holding and doing many projects in different fields..
+        /// </summary>
+        public static string Senior_Des {
+            get {
+                return ResourceManager.GetString("Senior_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2022 - Now.
+        /// </summary>
+        public static string Senior_Year {
+            get {
+                return ResourceManager.GetString("Senior_Year", resourceCulture);
             }
         }
         

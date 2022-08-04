@@ -186,6 +186,15 @@
   <data name="error404text" xml:space="preserve">
     <value>صفحه ای که دنبالش هستی رو &lt;br&gt; نمیتونم پیدا کنم برات :(</value>
   </data>
+  <data name="Freelancer" xml:space="preserve">
+    <value>فریلنسر</value>
+  </data>
+  <data name="Freelancer_Des" xml:space="preserve">
+    <value>شروع به کار برنامه نویسی با دو پروژه فریلنسری ، وب سایت نایت شاپ و اپلیکیشن موبایل گیم کلاب </value>
+  </data>
+  <data name="Freelancer_Year" xml:space="preserve">
+    <value>1398-1399</value>
+  </data>
   <data name="Git" xml:space="preserve">
     <value>Github</value>
   </data>
@@ -200,6 +209,15 @@
   </data>
   <data name="Javascript" xml:space="preserve">
     <value>JavaScript</value>
+  </data>
+  <data name="Junior" xml:space="preserve">
+    <value>برنامه نویس مبتدی</value>
+  </data>
+  <data name="Junior_Des" xml:space="preserve">
+    <value>به عنوان برنامه نویس سمت سرور در هلدینگ مدیس شروع به کار کردم و پروژه "الوبدو" باز نویسی کردیم</value>
+  </data>
+  <data name="Junior_Year" xml:space="preserve">
+    <value>1399 - 1400</value>
   </data>
   <data name="Mac" xml:space="preserve">
     <value>مک</value>
@@ -236,6 +254,15 @@
   </data>
   <data name="Selenium" xml:space="preserve">
     <value>Selenium</value>
+  </data>
+  <data name="Senior" xml:space="preserve">
+    <value>برنامه نویس ارشد</value>
+  </data>
+  <data name="Senior_Des" xml:space="preserve">
+    <value>با ادامه فعالیت در هلدینگ مدیس و انجام پروژه های متعدد در ضمینه های مختلف، به عنوان برنامه نویس ارشد کارم را ادامه میدهم</value>
+  </data>
+  <data name="Senior_Year" xml:space="preserve">
+    <value>1401 - الان</value>
   </data>
   <data name="SIMI" xml:space="preserve">
     <value>سازمان مدیریت صنعتی فارس</value>
