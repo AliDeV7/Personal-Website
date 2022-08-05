@@ -237,7 +237,7 @@
     <value>A library for controlling phone numbers</value>
   </data>
   <data name="PostMan" xml:space="preserve">
-    <value>PostMan</value>
+    <value>Postman</value>
   </data>
   <data name="Raya" xml:space="preserve">
     <value>Raya</value>
@@ -266,6 +266,9 @@
   </data>
   <data name="Senior_Year" xml:space="preserve">
     <value>2022 - Now</value>
+  </data>
+  <data name="SignalR" xml:space="preserve">
+    <value>SignalR</value>
   </data>
   <data name="SIMI" xml:space="preserve">
     <value>South Industrial Management Institute</value>

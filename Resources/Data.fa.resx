@@ -264,6 +264,9 @@
   <data name="Senior_Year" xml:space="preserve">
     <value>1401 - الان</value>
   </data>
+  <data name="SignalR" xml:space="preserve">
+    <value>SignalR</value>
+  </data>
   <data name="SIMI" xml:space="preserve">
     <value>سازمان مدیریت صنعتی فارس</value>
   </data>

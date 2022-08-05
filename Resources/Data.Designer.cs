@@ -412,7 +412,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PostMan.
+        ///   Looks up a localized string similar to Postman.
         /// </summary>
         public static string PostMan {
             get {
@@ -498,6 +498,15 @@ namespace Resources {
         public static string Senior_Year {
             get {
                 return ResourceManager.GetString("Senior_Year", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SignalR.
+        /// </summary>
+        public static string SignalR {
+            get {
+                return ResourceManager.GetString("SignalR", resourceCulture);
             }
         }
         
