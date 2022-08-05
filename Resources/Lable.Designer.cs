@@ -115,7 +115,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to if you want to talk about work, Send a message :).
+        ///   Looks up a localized string similar to if you want to talk about work, Send me a message :).
         /// </summary>
         public static string ContactForm {
             get {
@@ -138,6 +138,24 @@ namespace Resources {
         public static string ContactMeLable {
             get {
                 return ResourceManager.GetString("ContactMeLable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooperation With.
+        /// </summary>
+        public static string Cooperation {
+            get {
+                return ResourceManager.GetString("Cooperation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What Can I Do.
+        /// </summary>
+        public static string Do {
+            get {
+                return ResourceManager.GetString("Do", resourceCulture);
             }
         }
         
@@ -192,6 +210,15 @@ namespace Resources {
         public static string FullName {
             get {
                 return ResourceManager.GetString("FullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Future Projects.
+        /// </summary>
+        public static string FutureProjects {
+            get {
+                return ResourceManager.GetString("FutureProjects", resourceCulture);
             }
         }
         

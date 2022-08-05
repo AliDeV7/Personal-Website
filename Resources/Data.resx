@@ -129,6 +129,12 @@
   <data name="Aspnetcore" xml:space="preserve">
     <value>Asp.Net </value>
   </data>
+  <data name="Aurora" xml:space="preserve">
+    <value>Aurora</value>
+  </data>
+  <data name="Aurora_Des" xml:space="preserve">
+    <value>Sleep Product Collection, A Store For Selling Satin Sleep Products</value>
+  </data>
   <data name="AVR" xml:space="preserve">
     <value>AVR</value>
   </data>

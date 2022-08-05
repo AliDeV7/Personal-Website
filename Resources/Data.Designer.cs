@@ -97,6 +97,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aurora.
+        /// </summary>
+        public static string Aurora {
+            get {
+                return ResourceManager.GetString("Aurora", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sleep Product Collection, A Store For Selling Satin Sleep Products.
+        /// </summary>
+        public static string Aurora_Des {
+            get {
+                return ResourceManager.GetString("Aurora_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AVR.
         /// </summary>
         public static string AVR {

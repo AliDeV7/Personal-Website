@@ -144,6 +144,12 @@
   <data name="ContactMeLable" xml:space="preserve">
     <value>تماس با من</value>
   </data>
+  <data name="Cooperation" xml:space="preserve">
+    <value>همکاری با</value>
+  </data>
+  <data name="Do" xml:space="preserve">
+    <value>چه کاری انجام می دهم</value>
+  </data>
   <data name="Education" xml:space="preserve">
     <value>تحصیلات</value>
   </data>
@@ -161,6 +167,9 @@
   </data>
   <data name="FullName" xml:space="preserve">
     <value>نام و نام خانوادگی</value>
+  </data>
+  <data name="FutureProjects" xml:space="preserve">
+    <value>پروژه های آینده</value>
   </data>
   <data name="Job" xml:space="preserve">
     <value>توسعه دهنده سمت سرور</value>
