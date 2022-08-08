@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Ability1_Des" xml:space="preserve">
+    <value>وب سایت های مدرن و واکنش گرا در تمام دستبه بندی ها</value>
+  </data>
+  <data name="Ability1_Title" xml:space="preserve">
+    <value>ساخت وب سایت</value>
+  </data>
+  <data name="Ability2_Des" xml:space="preserve">
+    <value>API های با کیفیت به همراه داکیومنت های کامل و تمیز</value>
+  </data>
+  <data name="Ability2_Title" xml:space="preserve">
+    <value>توسعه API</value>
+  </data>
+  <data name="Ability3_Des" xml:space="preserve">
+    <value>اپلیکشن های زیبا و سریغ با آخرین متود های تکتولوژی های برنامه نویسی</value>
+  </data>
+  <data name="Ability3_Title" xml:space="preserve">
+    <value>ساخت برنامه های موبایل</value>
+  </data>
+  <data name="Ability4_Des" xml:space="preserve">
+    <value>اگر ایده های جدیدی دارید، همیشه چالش های جدید رو قبول میکنم</value>
+  </data>
+  <data name="Ability4_Title" xml:space="preserve">
+    <value>قبول چالش!</value>
+  </data>
   <data name="Alobodo" xml:space="preserve">
     <value>الوبدو</value>
   </data>
@@ -137,6 +161,18 @@
   </data>
   <data name="AVR" xml:space="preserve">
     <value>AVR</value>
+  </data>
+  <data name="Bio_L1" xml:space="preserve">
+    <value>&lt;h5&gt;Hey! My Name is Ali.&lt;/h5&gt;</value>
+  </data>
+  <data name="Bio_L11" xml:space="preserve">
+    <value>&lt;h5 style="margin-top:3.5rem;margin-bottom:1.4rem"&gt;سلام! اسم من علی ِ. برنامه نویس به خصوص برنامه نویسی وب.&lt;/h5&gt;</value>
+  </data>
+  <data name="Bio_L2" xml:space="preserve">
+    <value>&lt;p&gt;I like experimenting with new technologies, building small projects, and occassionally solving bugs!. I have good problem-solving skills and able to perform well in a team.&lt;/p&gt;</value>
+  </data>
+  <data name="Bio_L3" xml:space="preserve">
+    <value>&lt;p&gt;Recently I’m curious about &lt;b&gt;Blockchain&lt;/b&gt; and Crypto Currency. Also, I’m interested in Video Games and Cinema, they are my hobbies. &lt;/p&gt;</value>
   </data>
   <data name="Bootsrap" xml:space="preserve">
     <value>Bootstrap</value>

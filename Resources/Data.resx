@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Ability1_Des" xml:space="preserve">
+    <value>Modern and Responsive Websites in Any Type of Websites</value>
+  </data>
+  <data name="Ability1_Title" xml:space="preserve">
+    <value>Create Website</value>
+  </data>
+  <data name="Ability2_Des" xml:space="preserve">
+    <value>Top Quality APIs With Full and Clean Documentation</value>
+  </data>
+  <data name="Ability2_Title" xml:space="preserve">
+    <value>Create APIs</value>
+  </data>
+  <data name="Ability3_Des" xml:space="preserve">
+    <value>Beautiful and Fast Application with Latest Programming Technology</value>
+  </data>
+  <data name="Ability3_Title" xml:space="preserve">
+    <value>Create Mobile Application</value>
+  </data>
+  <data name="Ability4_Des" xml:space="preserve">
+    <value>If You Have New Idea, I Allways Accept New Challenges</value>
+  </data>
+  <data name="Ability4_Title" xml:space="preserve">
+    <value>Accept Challenges!</value>
+  </data>
   <data name="Alobodo" xml:space="preserve">
     <value>Alobodo</value>
   </data>
@@ -137,6 +161,15 @@
   </data>
   <data name="AVR" xml:space="preserve">
     <value>AVR</value>
+  </data>
+  <data name="Bio_L1" xml:space="preserve">
+    <value>&lt;h5 style="margin-top:3.5rem;margin-bottom:1.4rem"&gt;Hey! My Name is Ali. I'm a Programmer, Specialy a &lt;b&gt;Web Developer&lt;/b&gt;&lt;/h5&gt;</value>
+  </data>
+  <data name="Bio_L2" xml:space="preserve">
+    <value>&lt;p&gt;I like experimenting with new technologies, building small projects, and occassionally solving bugs!. I have good problem-solving skills and able to perform well in a team.&lt;/p&gt;</value>
+  </data>
+  <data name="Bio_L3" xml:space="preserve">
+    <value>&lt;p&gt;Recently I’m curious about &lt;b&gt;Blockchain&lt;/b&gt; and Crypto Currency. Also, I’m interested in Video Games and Cinema, they are my hobbies. &lt;/p&gt;</value>
   </data>
   <data name="Bootsrap" xml:space="preserve">
     <value>Bootstrap</value>

@@ -61,6 +61,78 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modern and Responsive Websites in Any Type of Websites.
+        /// </summary>
+        public static string Ability1_Des {
+            get {
+                return ResourceManager.GetString("Ability1_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Website.
+        /// </summary>
+        public static string Ability1_Title {
+            get {
+                return ResourceManager.GetString("Ability1_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Top Quality APIs With Full and Clean Documentation.
+        /// </summary>
+        public static string Ability2_Des {
+            get {
+                return ResourceManager.GetString("Ability2_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create APIs.
+        /// </summary>
+        public static string Ability2_Title {
+            get {
+                return ResourceManager.GetString("Ability2_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beautiful and Fast Application with Latest Programming Technology.
+        /// </summary>
+        public static string Ability3_Des {
+            get {
+                return ResourceManager.GetString("Ability3_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Mobile Application.
+        /// </summary>
+        public static string Ability3_Title {
+            get {
+                return ResourceManager.GetString("Ability3_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If You Have New Idea, I Allways Accept New Challenges.
+        /// </summary>
+        public static string Ability4_Des {
+            get {
+                return ResourceManager.GetString("Ability4_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Accept Challenges!.
+        /// </summary>
+        public static string Ability4_Title {
+            get {
+                return ResourceManager.GetString("Ability4_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alobodo.
         /// </summary>
         public static string Alobodo {
@@ -120,6 +192,33 @@ namespace Resources {
         public static string AVR {
             get {
                 return ResourceManager.GetString("AVR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;h5 style=&quot;margin-top:3.5rem;margin-bottom:1.4rem&quot;&gt;Hey! My Name is Ali. I&apos;m a Programmer, Specialy a &lt;b&gt;Web Developer&lt;/b&gt;&lt;/h5&gt;.
+        /// </summary>
+        public static string Bio_L1 {
+            get {
+                return ResourceManager.GetString("Bio_L1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;I like experimenting with new technologies, building small projects, and occassionally solving bugs!. I have good problem-solving skills and able to perform well in a team.&lt;/p&gt;.
+        /// </summary>
+        public static string Bio_L2 {
+            get {
+                return ResourceManager.GetString("Bio_L2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;Recently I’m curious about &lt;b&gt;Blockchain&lt;/b&gt; and Crypto Currency. Also, I’m interested in Video Games and Cinema, they are my hobbies. &lt;/p&gt;.
+        /// </summary>
+        public static string Bio_L3 {
+            get {
+                return ResourceManager.GetString("Bio_L3", resourceCulture);
             }
         }
         

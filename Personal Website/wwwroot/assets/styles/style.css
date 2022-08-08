@@ -3121,9 +3121,9 @@ button:focus {
     }
 
     .review-item::before {
-        background: var(--color-gradient-soft) url(../icons/icon-quote.svg);
+/*        background: var(--color-gradient-soft) url(../icons/icon-quote.svg);
         background-repeat: no-repeat;
-        background-position: 0 0, right 1.875rem top 1.5rem;
+        background-position: 0 0, right 1.875rem top 1.5rem;*/
     }
 
 @media only screen and (max-width: 580px) {
