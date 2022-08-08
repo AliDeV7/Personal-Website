@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Ability1_Des" xml:space="preserve">
-    <value>وب سایت های مدرن و واکنش گرا در تمام دستبه بندی ها</value>
+    <value>وب سایت های مدرن و واکنش گرا در تمام دسته بندی ها</value>
   </data>
   <data name="Ability1_Title" xml:space="preserve">
     <value>ساخت وب سایت</value>
@@ -130,7 +130,7 @@
     <value>توسعه API</value>
   </data>
   <data name="Ability3_Des" xml:space="preserve">
-    <value>اپلیکشن های زیبا و سریغ با آخرین متود های تکتولوژی های برنامه نویسی</value>
+    <value>اپلیکشن های زیبا و سریع با آخرین بروزترین تکنولوژی های برنامه نویسی</value>
   </data>
   <data name="Ability3_Title" xml:space="preserve">
     <value>ساخت برنامه های موبایل</value>
@@ -163,16 +163,15 @@
     <value>AVR</value>
   </data>
   <data name="Bio_L1" xml:space="preserve">
-    <value>&lt;h5&gt;Hey! My Name is Ali.&lt;/h5&gt;</value>
-  </data>
-  <data name="Bio_L11" xml:space="preserve">
-    <value>&lt;h5 style="margin-top:3.5rem;margin-bottom:1.4rem"&gt;سلام! اسم من علی ِ. برنامه نویس به خصوص برنامه نویسی وب.&lt;/h5&gt;</value>
+    <value>&lt;h5 style="margin-top:3.5rem;margin-bottom:1.4rem"&gt;سلام! من علی هستم. برنامه نویس Beck End و توسعه دهنده وب.&lt;/h5&gt;</value>
   </data>
   <data name="Bio_L2" xml:space="preserve">
-    <value>&lt;p&gt;I like experimenting with new technologies, building small projects, and occassionally solving bugs!. I have good problem-solving skills and able to perform well in a team.&lt;/p&gt;</value>
+    <value>&lt;p&gt;علاقه زیادی به تکنولوژی های جدید دارم و دوست دارم تا جای ممکن همه اونهارو تجربه کنم. توانایی حل مشکل (رفع Bug) در برنامه نویسی از تخصص های منه، و در تیم هم به خوبی میتونم کنار بقیه کارهارو انجام بدم.&lt;/p&gt;</value>
+    <comment>&lt;p&gt;I like experimenting with new technologies, building small projects, and occassionally solving bugs!. I have good problem-solving skills and able to perform well in a team.&lt;/p&gt;</comment>
   </data>
   <data name="Bio_L3" xml:space="preserve">
-    <value>&lt;p&gt;Recently I’m curious about &lt;b&gt;Blockchain&lt;/b&gt; and Crypto Currency. Also, I’m interested in Video Games and Cinema, they are my hobbies. &lt;/p&gt;</value>
+    <value>&lt;p&gt;اخیرا نسبت به بلاکچین و ارز دیجیتال و ساخت و ساز های شبکه ارزهای مختلف علاقمند شدم و دوست دارم که در این ضمینه هم اطلاعات نسبتا کاملی کسب کنم. همچنین سینما و بازی های ویدئویی سرگرمی های اصلی من هستند.&lt;/p&gt;</value>
+    <comment>&lt;p&gt;Recently I’m curious about &lt;b&gt;Blockchain&lt;/b&gt; and Crypto Currency. Also, I’m interested in Video Games and Cinema, they are my hobbies. &lt;/p&gt;</comment>
   </data>
   <data name="Bootsrap" xml:space="preserve">
     <value>Bootstrap</value>
