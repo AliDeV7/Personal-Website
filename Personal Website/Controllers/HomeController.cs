@@ -29,6 +29,7 @@ namespace Personal_Website.Controllers
             this._accessor = _accessor;
         }
 
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [CheckIP]
         public IActionResult Index()
         {
@@ -47,6 +48,7 @@ namespace Personal_Website.Controllers
             }
         }
 
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Home")]
         public IActionResult Home()
         {
@@ -64,6 +66,7 @@ namespace Personal_Website.Controllers
                     }
             }
         }
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Resume")]
         public IActionResult Resume()
         {
@@ -97,6 +100,8 @@ namespace Personal_Website.Controllers
         //            }
         //    }
         //}
+
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Contact")]
         public IActionResult Contact()
         {
@@ -115,7 +120,7 @@ namespace Personal_Website.Controllers
             }
         }
 
-        //[ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Projects")]
         public IActionResult Projects()
         {
@@ -134,6 +139,7 @@ namespace Personal_Website.Controllers
             }
         }
 
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         [Route("Projects/{name}")]
         public IActionResult GetProject(string name)
         {
@@ -208,6 +214,7 @@ namespace Personal_Website.Controllers
             return Redirect(returnURL);
         }
 
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 130)]
         public IActionResult Error404()
         {
             switch (cultureName)
