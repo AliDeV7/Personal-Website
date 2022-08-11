@@ -211,7 +211,7 @@
     <value>Select Category</value>
   </data>
   <data name="SendEmail" xml:space="preserve">
-    <value>Contant with Email</value>
+    <value>Send an Email</value>
   </data>
   <data name="SendMessage" xml:space="preserve">
     <value>Send Message</value>

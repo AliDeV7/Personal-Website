@@ -1,24 +1,26 @@
 ﻿@{
     Layout = null;
+    // RTL
 }
 
 <!-- About -->
 <div class="pb-0 pb-sm-2">
     <h1 class="title title--h1 title__separate">@Resources.Lable.About</h1>
-    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
-    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. </p>
+    @Html.Raw(@Resources.Data.Bio_L1)
+    @Html.Raw(@Resources.Data.Bio_L2)
+    @Html.Raw(@Resources.Data.Bio_L3)
 </div>
 
 <!-- What -->
-<h2 class="title title--h2 mt-3">چه کاری انجام می دهم</h2>
+<h2 class="title title--h2 mt-3">@Resources.Lable.Do</h2>
 <div class="row">
     <!-- Case Item -->
     <div class="col-12 col-lg-6">
         <div class="case-item box box-inner">
             <img class="case-item__icon" src="~/assets/icons/icon-design.svg" alt="" />
             <div>
-                <h3 class="title title--h3">طراحی وب سایت</h3>
-                <p class="case-item__caption">مدرن ترین و با کیفیت بالا طراحی شده در سطح حرفه ای.</p>
+                <h3 class="title title--h3">@Resources.Data.Ability1_Title</h3>
+                <p class="case-item__caption">@Resources.Data.Ability1_Des</p>
             </div>
         </div>
     </div>
@@ -28,8 +30,8 @@
         <div class="case-item box box-inner">
             <img class="case-item__icon" src="~/assets/icons/icon-dev.svg" alt="" />
             <div>
-                <h3 class="title title--h3">توسعه دهنده وب</h3>
-                <p class="case-item__caption">با کیفیت بالا و حرفه ای توسعه سایت ها در سطح حرفه ای.</p>
+                <h3 class="title title--h3">@Resources.Data.Ability2_Title</h3>
+                <p class="case-item__caption">@Resources.Data.Ability2_Des</p>
             </div>
         </div>
     </div>
@@ -39,8 +41,8 @@
         <div class="case-item box box-inner">
             <img class="case-item__icon" src="~/assets/icons/icon-app.svg" alt="" />
             <div>
-                <h3 class="title title--h3">برنامه های موبایل</h3>
-                <p class="case-item__caption">با کیفیت بالا و حرفه ای توسعه سایت ها در سطح حرفه ای.</p>
+                <h3 class="title title--h3">@Resources.Data.Ability3_Title</h3>
+                <p class="case-item__caption">@Resources.Data.Ability3_Des</p>
             </div>
         </div>
     </div>
@@ -48,168 +50,168 @@
     <!-- Case Item -->
     <div class="col-12 col-lg-6">
         <div class="case-item box box-inner">
-            <img class="case-item__icon" src="~/assets/icons/icon-photo.svg" alt="" />
+            <img class="case-item__icon" src="~/assets/icons/icon-challenge.svg" alt="" />
             <div>
-                <h3 class="title title--h3">عکاسی</h3>
-                <p class="case-item__caption">با کیفیت بالا و حرفه ای توسعه سایت ها در سطح حرفه ای.</p>
+                <h3 class="title title--h3">@Resources.Data.Ability4_Title</h3>
+                <p class="case-item__caption">@Resources.Data.Ability4_Des</p>
             </div>
         </div>
     </div>
 </div>
 
 
-<!-- Testimonials -->
+<!-- FutureProjects -->
 <div class="testimonials">
-    <h2 class="title title--h2 mt-3">نظرات مشتریان</h2>
+    <h2 class="title title--h2 mt-3">@Resources.Lable.FutureProjects</h2>
 
     <div class="swiper-container js-carousel-review">
         <div class="swiper-wrapper">
-            <!-- Item review -->
-            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-1" data-effect="mfp-zoom-out">
+            <!--Next Project -->
+            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-aurora" data-effect="mfp-zoom-out">
                 <figure class="box box-avatar">
-                    <img src="~/assets/images/avatar-1.png" alt="Daniel Lewis">
+                    <img src="~/assets/images/Aurora.png" alt="Aurora">
                 </figure>
-                <h4 class="title title--h3">دنیل لویس</h4>
-                <p class="review-item__caption">ملیکا برای ایجاد یک هویت سازمانی استخدام شد. ما با کار انجام شده بسیار خوشحال شدیم.</p>
+                <h4 class="title title--h3">@Resources.Data.Aurora</h4>
+                <p class="review-item__caption">@Resources.Data.Aurora_Des</p>
             </div>
 
-            <!-- Item review -->
+            @*                <!--Next Project -->
             <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-2" data-effect="mfp-zoom-out">
+            <figure class="box box-avatar">
+            <img src="~/assets/images/avatar-2.png" alt="Daniel Lewis">
+            </figure>
+            <h4 class="title title--h3">جسیکا میلر</h4>
+            <p class="review-item__caption">به لطف مهارت ملیکا، ما طراحی هایی داریم که می توانیم افتخار کنیم.</p>
+            </div>
+
+            <!--Next Project -->
+            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-3" data-effect="mfp-zoom-out">
+            <figure class="box box-avatar">
+            <img src="~/assets/images/avatar-3.png" alt="Daniel Lewis">
+            </figure>
+            <h4 class="title title--h3">تانیا رویز</h4>
+            <p class="review-item__caption">ملیکا برای ایجاد یک هویت سازمانی استخدام شد. ما با کار انجام شده بسیار خوشحال شدیم.</p>
+            </div>
+
+            <!--Next Project -->
+            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-4" data-effect="mfp-zoom-out">
+            <figure class="box box-avatar">
+            <img src="~/assets/images/avatar-4.png" alt="Daniel Lewis">
+            </figure>
+            <h4 class="title title--h3">توماس کاسترو</h4>
+            <p class="review-item__caption">به لطف مهارت ملیکا، ما طراحی هایی داریم که می توانیم افتخار کنیم.</p>
+            </div>
+            </div>*@
+
+            <div class="swiper-pagination" style="margin-top:2rem"></div>
+        </div>
+    </div>
+    <!-- Full review 1 -->
+    <div id="review-aurora" class="popup mfp-hide mfp-with-anim">
+        <div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
+                <figure class="box box-avatar">
+                    <img src="~/assets/images/Aurora.png" alt="Aurora">
+                </figure>
+            </div>
+            <div class="col-12 col-sm-10 full-rewiew-con-text">
+                <h2 class="title title--h2 mb-1">@Resources.Data.Aurora</h2>
+                @Html.Raw(@Resources.Data.Aurora_FullInfo1)
+                @Html.Raw(@Resources.Data.Aurora_FullInfo2)
+            </div>
+        </div>
+    </div>
+
+    <!-- Full review 2 -->
+    <div id="review-2" class="popup mfp-hide mfp-with-anim">
+        <div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
                 <figure class="box box-avatar">
                     <img src="~/assets/images/avatar-2.png" alt="Daniel Lewis">
                 </figure>
-                <h4 class="title title--h3">جسیکا میلر</h4>
-                <p class="review-item__caption">به لطف مهارت ملیکا، ما طراحی هایی داریم که می توانیم افتخار کنیم.</p>
+                <div class="review-icon-quote"></div>
             </div>
+            <div class="col-12 col-sm-10 full-rewiew-con-text">
+                <h2 class="title title--h2 mb-1">جسیکا میلر</h2>
+                <span class="review-date">25 بهمن 1400</span>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+            </div>
+        </div>
+    </div>
 
-            <!-- Item review -->
-            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-3" data-effect="mfp-zoom-out">
+    <!-- Full review 3 -->
+    <div id="review-3" class="popup mfp-hide mfp-with-anim">
+        <div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
                 <figure class="box box-avatar">
                     <img src="~/assets/images/avatar-3.png" alt="Daniel Lewis">
                 </figure>
-                <h4 class="title title--h3">تانیا رویز</h4>
-                <p class="review-item__caption">ملیکا برای ایجاد یک هویت سازمانی استخدام شد. ما با کار انجام شده بسیار خوشحال شدیم.</p>
+                <div class="review-icon-quote"></div>
             </div>
+            <div class="col-12 col-sm-10 full-rewiew-con-text">
+                <h2 class="title title--h2 mb-1">تانیا رویز</h2>
+                <span class="review-date">25 بهمن 1400</span>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+            </div>
+        </div>
+    </div>
 
-            <!-- Item review -->
-            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-4" data-effect="mfp-zoom-out">
+    <!-- Full review 4 -->
+    <div id="review-4" class="popup mfp-hide mfp-with-anim">
+        <div class="row">
+            <div class="col-12 col-sm-2 full-rewiew-con-avatar">
                 <figure class="box box-avatar">
                     <img src="~/assets/images/avatar-4.png" alt="Daniel Lewis">
                 </figure>
-                <h4 class="title title--h3">توماس کاسترو</h4>
-                <p class="review-item__caption">به لطف مهارت ملیکا، ما طراحی هایی داریم که می توانیم افتخار کنیم.</p>
+                <div class="review-icon-quote"></div>
+            </div>
+            <div class="col-12 col-sm-10 full-rewiew-con-text">
+                <h2 class="title title--h2 mb-1">توماس کاسترو</h2>
+                <span class="review-date">25 بهمن 1400</span>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
             </div>
         </div>
-
-        <div class="swiper-pagination"></div>
     </div>
-</div>
-<!-- Full review 1 -->
-<div id="review-1" class="popup mfp-hide mfp-with-anim">
-    <div class="row">
-        <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-            <figure class="box box-avatar">
-                <img src="~/assets/images/avatar-1.png" alt="Daniel Lewis">
+
+    <!-- Cooperation -->
+    <h2 class="title title--h2 mt-4">@Resources.Lable.Cooperation</h2>
+    <div class="swiper-container js-carousel-clients">
+        <div class="swiper-wrapper">
+            <!-- Item Cooperation -->
+            <figure class="swiper-slide">
+                <a href="https://www.instagram.com/aurora_moonnight/" target="_blank"><img class="logo-client" src="~/assets/images/clients/Aurora.png" alt="Logo" /></a>
             </figure>
-            <div class="review-icon-quote"></div>
-        </div>
-        <div class="col-12 col-sm-10 full-rewiew-con-text">
-            <h2 class="title title--h2 mb-1">دنیل لویس</h2>
-            <span class="review-date">25 بهمن 1400</span>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
-        </div>
-    </div>
-</div>
 
-<!-- Full review 2 -->
-<div id="review-2" class="popup mfp-hide mfp-with-anim">
-    <div class="row">
-        <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-            <figure class="box box-avatar">
-                <img src="~/assets/images/avatar-2.png" alt="Daniel Lewis">
+            <!-- Item Cooperation -->
+            <figure class="swiper-slide">
+                <a href="https://medis.land" target="_blank"><img class="logo-client" src="~/assets/images/clients/Medis.png" alt="Logo" /></a>
             </figure>
-            <div class="review-icon-quote"></div>
-        </div>
-        <div class="col-12 col-sm-10 full-rewiew-con-text">
-            <h2 class="title title--h2 mb-1">جسیکا میلر</h2>
-            <span class="review-date">25 بهمن 1400</span>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
-        </div>
-    </div>
-</div>
 
-<!-- Full review 3 -->
-<div id="review-3" class="popup mfp-hide mfp-with-anim">
-    <div class="row">
-        <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-            <figure class="box box-avatar">
-                <img src="~/assets/images/avatar-3.png" alt="Daniel Lewis">
+            <!-- Item Cooperation -->
+            <figure class="swiper-slide">
+                <a href="https://alobodo.com" target="_blank"><img class="logo-client" src="~/assets/images/clients/Alobodo.png" alt="Logo" /></a>
             </figure>
-            <div class="review-icon-quote"></div>
-        </div>
-        <div class="col-12 col-sm-10 full-rewiew-con-text">
-            <h2 class="title title--h2 mb-1">تانیا رویز</h2>
-            <span class="review-date">25 بهمن 1400</span>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
-        </div>
-    </div>
-</div>
 
-<!-- Full review 4 -->
-<div id="review-4" class="popup mfp-hide mfp-with-anim">
-    <div class="row">
-        <div class="col-12 col-sm-2 full-rewiew-con-avatar">
-            <figure class="box box-avatar">
-                <img src="~/assets/images/avatar-4.png" alt="Daniel Lewis">
+            <!-- Item Cooperation -->
+            <figure class="swiper-slide">
+                <a href="https://www.instagram.com/knight.club.shz/" target="_blank"><img class="logo-client" src="~/assets/images/clients/KinghtClub.png" alt="Logo" /></a>
             </figure>
-            <div class="review-icon-quote"></div>
+
+            <!-- Item Cooperation -->
+            <figure class="swiper-slide">
+                <a href="https://elimedi.com" target="_blank"><img class="logo-client" src="~/assets/images/clients/Elimedi.png" alt="Logo" /></a>
+            </figure>
         </div>
-        <div class="col-12 col-sm-10 full-rewiew-con-text">
-            <h2 class="title title--h2 mb-1">توماس کاسترو</h2>
-            <span class="review-date">25 بهمن 1400</span>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
-        </div>
+        <div class="swiper-pagination" style="margin-top:2rem"></div>
     </div>
 </div>
-
-<!-- Clients -->
-<h2 class="title title--h2 mt-4">مشتریان</h2>
-<div class="swiper-container js-carousel-clients">
-    <div class="swiper-wrapper">
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-1-color.png" alt="Logo" /></a>
-        </figure>
-
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-2-color.png" alt="Logo" /></a>
-        </figure>
-
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-3-color.png" alt="Logo" /></a>
-        </figure>
-
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-4-color.png" alt="Logo" /></a>
-        </figure>
-
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-5-color.png" alt="Logo" /></a>
-        </figure>
-
-        <!-- Item client -->
-        <figure class="swiper-slide">
-            <a href="#"><img class="logo-client" src="~/assets/images/clients/logo-6-color.png" alt="Logo" /></a>
-        </figure>
-    </div>
-</div>
-<!-- JavaScripts -->
 <script src="~/assets/js/common.js"></script>
+
+<script>
+    let home = document.getElementById('homemenu');
+    home.classList.add("active");
+    home.classList.add("disabled-link");
+</script>

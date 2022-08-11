@@ -139,7 +139,7 @@
     <value>اگر ایده های جدیدی دارید، همیشه چالش های جدید رو قبول میکنم</value>
   </data>
   <data name="Ability4_Title" xml:space="preserve">
-    <value>قبول چالش!</value>
+    <value>قبول چالش ها!</value>
   </data>
   <data name="Alobodo" xml:space="preserve">
     <value>الوبدو</value>
@@ -157,7 +157,13 @@
     <value>Aurora</value>
   </data>
   <data name="Aurora_Des" xml:space="preserve">
-    <value>کالکشن کالاهای خواب، فروشگاهی برای فروش محصولات خواب از جنس ساتن</value>
+    <value>برند فروشگاهی آرورا در زمینه خواب، پوست، مو و زیبایی فعالیت میکند.</value>
+  </data>
+  <data name="Aurora_FullInfo1" xml:space="preserve">
+    <value>&lt;p&gt;آرورا یک برند در زمینه محصولات خواب، پوست، مو و زیبایی است که از با کیفیت ترین ساتن ها در محصولات خود استفاده می کند. این برند توسط کیمیا نعمت اللهی در 2021 April تأسیس و طراحی شده و در حال حاضر فعالیت خود را به صورت فروشگاه آنلاین در اینستاگرام دنبال می کند.&lt;/p&gt;</value>
+  </data>
+  <data name="Aurora_FullInfo2" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;وب سایت فروشگاهی برند Aurora به زودی توسط من طراحی میشود.&lt;/b&gt;&lt;/p&gt;</value>
   </data>
   <data name="AVR" xml:space="preserve">
     <value>AVR</value>

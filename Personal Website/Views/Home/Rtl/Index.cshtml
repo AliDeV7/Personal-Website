@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = @Resources.PageTitle.Home;
+    // RTL
 }
 <!-- About -->
 <div class="pb-0 pb-sm-2">
@@ -65,7 +66,7 @@
     <div class="swiper-container js-carousel-review">
         <div class="swiper-wrapper">
             <!--Next Project -->
-            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-1" data-effect="mfp-zoom-out">
+            <div class="swiper-slide review-item box box-inner js-open-review" data-mfp-src="#review-aurora" data-effect="mfp-zoom-out">
                 <figure class="box box-avatar">
                     <img src="~/assets/images/Aurora.png" alt="Aurora">
                 </figure>
@@ -105,7 +106,7 @@
         </div>
     </div>
     <!-- Full review 1 -->
-    <div id="review-1" class="popup mfp-hide mfp-with-anim">
+    <div id="review-aurora" class="popup mfp-hide mfp-with-anim">
         <div class="row">
             <div class="col-12 col-sm-2 full-rewiew-con-avatar">
                 <figure class="box box-avatar">
@@ -114,8 +115,8 @@
             </div>
             <div class="col-12 col-sm-10 full-rewiew-con-text">
                 <h2 class="title title--h2 mb-1">@Resources.Data.Aurora</h2>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                @Html.Raw(@Resources.Data.Aurora_FullInfo1)
+                @Html.Raw(@Resources.Data.Aurora_FullInfo2)
             </div>
         </div>
     </div>
@@ -180,27 +181,27 @@
         <div class="swiper-wrapper">
             <!-- Item Cooperation -->
             <figure class="swiper-slide">
-                <a href="#"><img class="logo-client" src="~/assets/images/clients/Aurora.png" alt="Logo" /></a>
+                <a href="https://www.instagram.com/aurora_moonnight/" target="_blank"><img class="logo-client" src="~/assets/images/clients/Aurora.png" alt="Logo" /></a>
             </figure>
 
             <!-- Item Cooperation -->
             <figure class="swiper-slide">
-                <a href="#"><img class="logo-client" src="~/assets/images/clients/Medis.png" alt="Logo" /></a>
+                <a href="https://medis.land" target="_blank"><img class="logo-client" src="~/assets/images/clients/Medis.png" alt="Logo" /></a>
             </figure>
 
             <!-- Item Cooperation -->
             <figure class="swiper-slide">
-                <a href="#"><img class="logo-client" src="~/assets/images/clients/Alobodo.png" alt="Logo" /></a>
+                <a href="https://alobodo.com" target="_blank"><img class="logo-client" src="~/assets/images/clients/Alobodo.png" alt="Logo" /></a>
             </figure>
 
             <!-- Item Cooperation -->
             <figure class="swiper-slide">
-                <a href="#"><img class="logo-client" src="~/assets/images/clients/KinghtClub.png" alt="Logo" /></a>
+                <a href="https://www.instagram.com/knight.club.shz/" target="_blank"><img class="logo-client" src="~/assets/images/clients/KinghtClub.png" alt="Logo" /></a>
             </figure>
 
             <!-- Item Cooperation -->
             <figure class="swiper-slide">
-                <a href="#"><img class="logo-client" src="~/assets/images/clients/Elimedi.png" alt="Logo" /></a>
+                <a href="https://elimedi.com" target="_blank"><img class="logo-client" src="~/assets/images/clients/Elimedi.png" alt="Logo" /></a>
             </figure>
         </div>
         <div class="swiper-pagination" style="margin-top:2rem"></div>

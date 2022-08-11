@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 580px) {
     .title--h2 {
+        margin-top:2rem !important;
         font-size: 1.125rem;
     }
 }
@@ -242,17 +243,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 580px) {
     .title--h4 {
-        font-size: 0.875rem;
+        font-size: 0.975rem;
     }
 }
 
 .title--h5 {
-    font-size: 0.875rem;
+    font-size: 0.975rem;
 }
 
 @media only screen and (max-width: 580px) {
     .title--h5 {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -3161,7 +3162,6 @@ button:focus {
 @media only screen and (max-width: 580px) {
     .review-item .title {
         margin-right: 0;
-        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
 }

@@ -340,7 +340,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contant with Email.
+        ///   Looks up a localized string similar to Send an Email.
         /// </summary>
         public static string SendEmail {
             get {

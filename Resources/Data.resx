@@ -157,7 +157,15 @@
     <value>Aurora</value>
   </data>
   <data name="Aurora_Des" xml:space="preserve">
-    <value>Sleep Product Collection, A Store For Selling Satin Sleep Products</value>
+    <value>Aurora Store Operates in the Field of Sleep, Skin, Hair and Beauty.</value>
+    <comment>برند فروشگاهی آرورا در زمینه خواب، پوست، مو و زیبایی فعالیت میکند.</comment>
+  </data>
+  <data name="Aurora_FullInfo1" xml:space="preserve">
+    <value>&lt;p&gt;Aurora is a brand in the field of Sleep, Skin, Hair and Beauty products that uses the highest quality Satins in its products. This brand was founded and designed by Kimia Nematollahi in April 2021 and is currently following its activity as an online store on Instagram.
+&lt;/p&gt;</value>
+  </data>
+  <data name="Aurora_FullInfo2" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;Aurora Shop Website, Will Be Designed By Me.&lt;/b&gt;&lt;/p&gt;</value>
   </data>
   <data name="AVR" xml:space="preserve">
     <value>AVR</value>

@@ -5,79 +5,38 @@
  version: 1.0.1
 ------------------------------------------------ */
 /*fonts*/
+
 @font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-ExtraBlack.woff2') format('woff2'), url('../../fonts/IRY-ExtraBlack.woff') format('woff'), url('../../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
+    font-family: 'FredokaOne';
+    src: url('../../fonts/FredokaOne-Regular.woff2') format('woff2'), url('../../fonts/FredokaOne-Regular.woff') format('woff'), url('../../fonts/FredokaOne-Regular.svg#IRY-ExtraBlack') format('svg');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-ExtraBold.woff2') format('woff2'), url('../../fonts/IRY-ExtraBold.woff') format('woff'), url('../../fonts/IRY-ExtraBold.svg#IRY-ExtraBold') format('svg');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-Black.woff2') format('woff2'), url('../../fonts/IRY-Black.woff') format('woff'), url('../../fonts/IRY-Black.svg#IRY-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-Light.woff2') format('woff2'), url('../../fonts/IRY-Light.woff') format('woff'), url('../../fonts/IRY-Light.svg#IRY-Light') format('svg');
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Medium.woff2') format('woff2'), url('../../fonts/Roboto-Medium.woff') format('woff'), url('../../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-Medium.woff2') format('woff2'), url('../../fonts/IRY-Medium.woff') format('woff'), url('../../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-Thin.woff2') format('woff2'), url('../../fonts/IRY-Thin.woff') format('woff'), url('../../fonts/IRY-Thin.svg#IRY-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY-Bold.woff2') format('woff2'), url('../../fonts/IRY-Bold.woff') format('woff'), url('../../fonts/IRY-Bold.svg#IRY-Bold') format('svg');
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Bold.woff2') format('woff2'), url('../../fonts/Roboto-Bold.woff') format('woff'), url('../../fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'IRY';
-    src: url('../../fonts/IRY.woff2') format('woff2'), url('../../fonts/IRY.woff') format('woff'), url('../../fonts/IRY.svg#IRY') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sarb';
-    src: url('../../fonts/Sarb-Regular.woff2') format('woff2'), url('../../fonts/Sarb-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 
 /*typography*/
 body, .sidebar__user-name, .tooltip-inner, h3, h4, h5 {
-    font-family:  sans-serif;
+    font-family: 'Roboto';
 }
 
 body {
-    font-size: 0.9575rem;
+    font-size: 0.98rem;
 }
 
 .sidebar__user-name {
@@ -90,11 +49,11 @@ h3, h5 {
 }
 
 h1, h2, h6, .review-item .title {
-    font-family: sans-serif;
+    font-family: 'FredokaOne';
 }
 
 .news-item .title, .header-post .title {
-    font-family: sans-serif;
+    font-family: 'FredokaOne';
     font-weight: 800;
 }
 
@@ -339,7 +298,7 @@ html, body {
 .header-project .title {
     left: 0;
     right: initial;
-    font-family: 'IRY';
+    font-family: 'FredokaOne';
 }
 
 .details-info--inline .details-info__item {

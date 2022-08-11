@@ -178,11 +178,30 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sleep Product Collection, A Store For Selling Satin Sleep Products.
+        ///   Looks up a localized string similar to Aurora Store Operates in the Field of Sleep, Skin, Hair and Beauty..
         /// </summary>
         public static string Aurora_Des {
             get {
                 return ResourceManager.GetString("Aurora_Des", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;Aurora is a brand in the field of Sleep, Skin, Hair and Beauty products that uses the highest quality Satins in its products. This brand was founded and designed by Kimia Nematollahi in April 2021 and is currently following its activity as an online store on Instagram.
+        ///&lt;/p&gt;.
+        /// </summary>
+        public static string Aurora_FullInfo1 {
+            get {
+                return ResourceManager.GetString("Aurora_FullInfo1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;&lt;b&gt;Aurora Shop Website, Will Be Designed By Me.&lt;/b&gt;&lt;/p&gt;.
+        /// </summary>
+        public static string Aurora_FullInfo2 {
+            get {
+                return ResourceManager.GetString("Aurora_FullInfo2", resourceCulture);
             }
         }
         
