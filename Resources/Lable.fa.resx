@@ -207,6 +207,9 @@
   <data name="Projects" xml:space="preserve">
     <value>نمونه کارها</value>
   </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>انتخاب دسته بندی</value>
+  </data>
   <data name="SendEmail" xml:space="preserve">
     <value>ارسال ایمیل</value>
   </data>
