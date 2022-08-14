@@ -6,6 +6,13 @@
 ------------------------------------------------ */
 /*fonts*/
 @font-face {
+    font-family: 'FredokaOne';
+    src: url('../../fonts/FredokaOne-Regular.woff2') format('woff2'), url('../../fonts/FredokaOne-Regular.woff') format('woff'), url('../../fonts/FredokaOne-Regular.svg#IRY-ExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'IRY';
     src: url('../fonts/IRY-ExtraBlack.woff2') format('woff2'), url('../fonts/IRY-ExtraBlack.woff') format('woff'), url('../fonts/IRY-ExtraBlack.svg#IRY-ExtraBlack') format('svg');
     font-weight: 900;
