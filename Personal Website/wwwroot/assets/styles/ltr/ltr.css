@@ -26,6 +26,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'IRY';
+    src: url('../../fonts/IRY-Medium.woff2') format('woff2'), url('../../fonts/IRY-Medium.woff') format('woff'), url('../../fonts/IRY-Medium.svg#IRY-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
