@@ -104,8 +104,8 @@ namespace Personal_Website.MiddleWare
 
             private async Task<string> GetVisitorCountry()
             {
-                var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-                //var VistorIP = "79.127.83.207";
+                //var VistorIP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                var VistorIP = "5.202.170.225";
                 var IntIPAddess = IPHelper.IpAddressToInteger(VistorIP);
                 var IPCountry = await _db.IPRanges.Include(x => x.Country).FirstOrDefaultAsync(x => IntIPAddess >= x.BeginIPAddress && IntIPAddess <= x.EndIPAddress);
                 if (IPCountry != null)
